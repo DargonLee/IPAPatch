@@ -18,86 +18,39 @@
             endingLineNumber = "146"
             landmarkName = "json(data)"
             landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "17847504-5054-4545-844C-F88B1DACFED7 - ae4a70bc267ea81c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ungzipData"
-                  moduleName = "IPAPatchFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Desktop/Github/IPAPatch/IPAPatch/Hookes/Http/HookURLProtocol.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  uuid = "17847504-5054-4545-844C-F88B1DACFED7 - b439f6c6446ead65"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "json"
-                  moduleName = "IPAPatchFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Desktop/Github/IPAPatch/IPAPatch/Hookes/Http/HookURLProtocol.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "146"
-                  endingLineNumber = "146"
-                  offsetFromSymbolStart = "120">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EA6019BE-1777-4131-AE01-9D16F6B788AB"
+            uuid = "8646159F-6C08-4D46-88AF-50F68986D1F1"
             shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IPAPatch/Hookes/BundleID/BundleReplace.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-hisBundleID"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "457BF31E-B6E0-4417-AA4E-FE05096802BD"
+            shouldBeEnabled = "Yes"
+            condition = "b == nil"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IPAPatch/Hookes/Http/HookURLProtocol.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "json(data)"
             landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "EA6019BE-1777-4131-AE01-9D16F6B788AB - b439f6c6446ead27"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "json"
-                  moduleName = "IPAPatchFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Desktop/Github/IPAPatch/IPAPatch/Hookes/Http/HookURLProtocol.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "196">
-               </Location>
-               <Location
-                  uuid = "EA6019BE-1777-4131-AE01-9D16F6B788AB - b439f6c6446ead27"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "json"
-                  moduleName = "IPAPatchFramework"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Desktop/Github/IPAPatch/IPAPatch/Hookes/Http/HookURLProtocol.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "84">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
