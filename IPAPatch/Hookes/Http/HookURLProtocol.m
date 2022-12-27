@@ -17,8 +17,11 @@
 @end
 
 @implementation HookURLProtocol
-+ (void)load
+
++ (void)hook
 {
+    [NSURLProtocol registerClass:[NSClassFromString(@"HookURLProtocol") class]];
+
     bgl_exchangeMethod([NSURLSessionTask class], @selector(resume), [HookURLProtocol class], @selector(f_resume), @selector(resume));
     bgl_exchangeMethod([WKWebView class], @selector(initWithFrame:configuration:), [HookURLProtocol class], @selector(f_initWithFrame:configuration:), @selector(initWithFrame:configuration:));
     exchangeClassMethod(@"WKWebView", @"handlesURLScheme:", @"HookURLProtocol", @"f_handlesURLScheme:");

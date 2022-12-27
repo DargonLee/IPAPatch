@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HookURLProtocol : NSObject
 
++ (void)hook;
+
 @end
 
 NS_ASSUME_NONNULL_END

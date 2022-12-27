@@ -11,7 +11,7 @@
 	<key>USE_REVEALSERVER</key>
 	<false/>
 	<key>RESTORE_SYMBOLS</key>
-	<false/>
+	<true/>
 	<key>CREATE_IPA_FILE</key>
 	<false/>
 	<key>IGNORE_UI_SUPPORTED_DEVICES</key>
