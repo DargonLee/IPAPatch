@@ -1,0 +1,5 @@
+*.ipa
+Temp
+Assets/*.ipa
+Assets/Payload*
+IPAPatch.xcodeproj/xcshareddata
