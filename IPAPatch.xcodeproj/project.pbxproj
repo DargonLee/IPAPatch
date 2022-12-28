@@ -26,6 +26,8 @@
 		187318AB295AC46D002A8EF2 /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 187318A8295AC46D002A8EF2 /* JRSwizzle.h */; };
 		187318AC295AC46D002A8EF2 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 187318A9295AC46D002A8EF2 /* JRSwizzle.m */; };
 		187318B8295ACD11002A8EF2 /* BundleReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 187318B2295AC649002A8EF2 /* BundleReplace.m */; };
+		188AA239295BF0E7008048D8 /* UIViewController+Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = 188AA237295BF0E7008048D8 /* UIViewController+Screen.h */; };
+		188AA23A295BF0E7008048D8 /* UIViewController+Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AA238295BF0E7008048D8 /* UIViewController+Screen.m */; };
 		8444640B26E5EACB00E6E659 /* HookURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8444640926E5EACB00E6E659 /* HookURLProtocol.h */; };
 		8444640C26E5EACB00E6E659 /* HookURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 8444640A26E5EACB00E6E659 /* HookURLProtocol.m */; };
 		84788D1126CB96120040100B /* PermissionCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 84788D0F26CB96120040100B /* PermissionCheck.h */; };
@@ -71,6 +73,8 @@
 		187318A9295AC46D002A8EF2 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 		187318B1295AC649002A8EF2 /* BundleReplace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BundleReplace.h; sourceTree = "<group>"; };
 		187318B2295AC649002A8EF2 /* BundleReplace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BundleReplace.m; sourceTree = "<group>"; };
+		188AA237295BF0E7008048D8 /* UIViewController+Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Screen.h"; sourceTree = "<group>"; };
+		188AA238295BF0E7008048D8 /* UIViewController+Screen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Screen.m"; sourceTree = "<group>"; };
 		8444640926E5EACB00E6E659 /* HookURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookURLProtocol.h; sourceTree = "<group>"; };
 		8444640A26E5EACB00E6E659 /* HookURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookURLProtocol.m; sourceTree = "<group>"; };
 		84788D0F26CB96120040100B /* PermissionCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermissionCheck.h; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 		187318AD295AC4C2002A8EF2 /* Hookes */ = {
 			isa = PBXGroup;
 			children = (
+				188AA236295BF0C5008048D8 /* Screen */,
 				187318B0295AC604002A8EF2 /* BundleID */,
 				187318AF295AC5EC002A8EF2 /* Permission */,
 				187318AE295AC5B0002A8EF2 /* Http */,
@@ -186,6 +191,15 @@
 				187318B2295AC649002A8EF2 /* BundleReplace.m */,
 			);
 			path = BundleID;
+			sourceTree = "<group>";
+		};
+		188AA236295BF0C5008048D8 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				188AA237295BF0E7008048D8 /* UIViewController+Screen.h */,
+				188AA238295BF0E7008048D8 /* UIViewController+Screen.m */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		C63AC1A01E838B8E0094B1C5 /* Vendors */ = {
@@ -299,6 +313,7 @@
 				C63AC1AA1E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h in Headers */,
 				84788D1126CB96120040100B /* PermissionCheck.h in Headers */,
 				BE47177924E393E000A77647 /* HookTools.h in Headers */,
+				188AA239295BF0E7008048D8 /* UIViewController+Screen.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +464,7 @@
 				E8243A0F23ACBF5B0077E34F /* CustomURLProtocol.m in Sources */,
 				BE47177A24E393E000A77647 /* HookTools.m in Sources */,
 				C63AC1A51E838BB70094B1C5 /* fishhook.c in Sources */,
+				188AA23A295BF0E7008048D8 /* UIViewController+Screen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
