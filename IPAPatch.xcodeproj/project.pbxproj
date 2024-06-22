@@ -1,0 +1,2019 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		C6DDBB5C1F51468D00A42BE2 /* IPAPatch */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C6DDBB5D1F51468D00A42BE2 /* Build configuration list for PBXAggregateTarget "IPAPatch" */;
+			buildPhases = (
+				C6DDBB631F5147BA00A42BE2 /* ShellScript */,
+			);
+			dependencies = (
+				C6DDBB611F51469300A42BE2 /* PBXTargetDependency */,
+			);
+			name = IPAPatch;
+			productName = IPAPatch;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		180572792C269199007659DB /* UIButton+ZXHookAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805726B2C269199007659DB /* UIButton+ZXHookAction.h */; };
+		1805727A2C269199007659DB /* ZXBlockLogResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572112C269199007659DB /* ZXBlockLogResult.h */; };
+		1805727B2C269199007659DB /* ZXHookUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572762C269199007659DB /* ZXHookUtil.h */; };
+		1805727C2C269199007659DB /* ZXDataStoreCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572422C269199007659DB /* ZXDataStoreCache.h */; };
+		1805727D2C269199007659DB /* NSObject+ZXToJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572332C269199007659DB /* NSObject+ZXToJson.h */; };
+		1805727E2C269199007659DB /* NSMutableArray+ZXSafetySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572182C269199007659DB /* NSMutableArray+ZXSafetySet.h */; };
+		1805727F2C269199007659DB /* NSString+ZXHookRegular.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571EE2C269199007659DB /* NSString+ZXHookRegular.h */; };
+		180572802C269199007659DB /* ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572372C269199007659DB /* ZXDataConvert.h */; };
+		180572812C269199007659DB /* ZXShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805725E2C269199007659DB /* ZXShadowView.h */; };
+		180572822C269199007659DB /* ZXURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572552C269199007659DB /* ZXURLProtocol.h */; };
+		180572832C269199007659DB /* ZXCodeFloor.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572742C269199007659DB /* ZXCodeFloor.h */; };
+		180572842C269199007659DB /* UUCaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571E72C269199007659DB /* UUCaptainHook.h */; };
+		180572852C269199007659DB /* UIView+ZXFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805725C2C269199007659DB /* UIView+ZXFrame.h */; };
+		180572862C269199007659DB /* NSObject+ZXToModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572352C269199007659DB /* NSObject+ZXToModel.h */; };
+		180572872C269199007659DB /* NSObject+ZXSafetySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805721E2C269199007659DB /* NSObject+ZXSafetySet.h */; };
+		180572882C269199007659DB /* ZXDataConvertConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572392C269199007659DB /* ZXDataConvertConfig.h */; };
+		180572892C269199007659DB /* ZXBlockLogTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572132C269199007659DB /* ZXBlockLogTool.h */; };
+		1805728A2C269199007659DB /* ZXDecimalNumberTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572282C269199007659DB /* ZXDecimalNumberTool.h */; };
+		1805728B2C269199007659DB /* ZXHookClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572032C269199007659DB /* ZXHookClass.h */; };
+		1805728C2C269199007659DB /* ZXEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571F92C269199007659DB /* ZXEncryption.h */; };
+		1805728D2C269199007659DB /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571FF2C269199007659DB /* ANYMethodLog.h */; };
+		1805728E2C269199007659DB /* ZXDataHandleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805724A2C269199007659DB /* ZXDataHandleLog.h */; };
+		1805728F2C269199007659DB /* NSObject+ZXHookClassUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572012C269199007659DB /* NSObject+ZXHookClassUtil.h */; };
+		180572902C269199007659DB /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572632C269199007659DB /* UIView+Toast.h */; };
+		180572912C269199007659DB /* ZXMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805720A2C269199007659DB /* ZXMethodLog.h */; };
+		180572922C269199007659DB /* NSObject+ZXToDic.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572312C269199007659DB /* NSObject+ZXToDic.h */; };
+		180572932C269199007659DB /* UIButton+ZXAddAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572692C269199007659DB /* UIButton+ZXAddAction.h */; };
+		180572942C269199007659DB /* ZXImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572592C269199007659DB /* ZXImagePicker.h */; };
+		180572952C269199007659DB /* NSObject+ZXSQliteHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805723C2C269199007659DB /* NSObject+ZXSQliteHandle.h */; };
+		180572962C269199007659DB /* SqlResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805723E2C269199007659DB /* SqlResult.h */; };
+		180572972C269199007659DB /* ZXDataHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572482C269199007659DB /* ZXDataHandle.h */; };
+		180572982C269199007659DB /* NSString+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572202C269199007659DB /* NSString+ZXDataConvert.h */; };
+		180572992C269199007659DB /* CocoaSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571F62C269199007659DB /* CocoaSecurity.h */; };
+		1805729A2C269199007659DB /* NSDictionary+ZXSafetySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572162C269199007659DB /* NSDictionary+ZXSafetySet.h */; };
+		1805729B2C269199007659DB /* ZXClassArchived.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572402C269199007659DB /* ZXClassArchived.h */; };
+		1805729C2C269199007659DB /* ZXDataHandleHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572492C269199007659DB /* ZXDataHandleHeaders.h */; };
+		1805729D2C269199007659DB /* ZXRequestBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572532C269199007659DB /* ZXRequestBlock.h */; };
+		1805729E2C269199007659DB /* NSData+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805722D2C269199007659DB /* NSData+ZXDataConvert.h */; };
+		1805729F2C269199007659DB /* ZXDataStoreSQlite.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572442C269199007659DB /* ZXDataStoreSQlite.h */; };
+		180572A02C269199007659DB /* UIViewController+ZXHandleLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571F02C269199007659DB /* UIViewController+ZXHandleLoad.h */; };
+		180572A12C269199007659DB /* ZXHookUIGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572702C269199007659DB /* ZXHookUIGet.h */; };
+		180572A22C269199007659DB /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571F32C269199007659DB /* Base64.h */; };
+		180572A32C269199007659DB /* ZXPoll.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805724C2C269199007659DB /* ZXPoll.h */; };
+		180572A42C269199007659DB /* NSURLSession+ZXHttpProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805724F2C269199007659DB /* NSURLSession+ZXHttpProxy.h */; };
+		180572A52C269199007659DB /* NSObject+ZXHandleLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571EC2C269199007659DB /* NSObject+ZXHandleLoad.h */; };
+		180572A62C269199007659DB /* ZXHookClassMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572052C269199007659DB /* ZXHookClassMethod.h */; };
+		180572A72C269199007659DB /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805720D2C269199007659DB /* CTBlockDescription.h */; };
+		180572A82C269199007659DB /* NSDictionary+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805722F2C269199007659DB /* NSDictionary+ZXDataConvert.h */; };
+		180572A92C269199007659DB /* ZXHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571FC2C269199007659DB /* ZXHttpRequest.h */; };
+		180572AA2C269199007659DB /* NSArray+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805722B2C269199007659DB /* NSArray+ZXDataConvert.h */; };
+		180572AB2C269199007659DB /* UIViewController+ZXAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572662C269199007659DB /* UIViewController+ZXAlert.h */; };
+		180572AC2C269199007659DB /* UIView+ZXHookUIGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805726E2C269199007659DB /* UIView+ZXHookUIGet.h */; };
+		180572AD2C269199007659DB /* ZXClassPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572242C269199007659DB /* ZXClassPrint.h */; };
+		180572AE2C269199007659DB /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571E92C269199007659DB /* JRSwizzle.h */; };
+		180572AF2C269199007659DB /* NSObject+ZXGetProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805721C2C269199007659DB /* NSObject+ZXGetProperty.h */; };
+		180572B02C269199007659DB /* ZXHookClassPro.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572072C269199007659DB /* ZXHookClassPro.h */; };
+		180572B12C269199007659DB /* ZXShowImgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572602C269199007659DB /* ZXShowImgView.h */; };
+		180572B22C269199007659DB /* NSObject+ZXDataConvertRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805721A2C269199007659DB /* NSObject+ZXDataConvertRule.h */; };
+		180572B32C269199007659DB /* NSString+ZXRegular.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572222C269199007659DB /* NSString+ZXRegular.h */; };
+		180572B42C269199007659DB /* ZXHttpIPGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572512C269199007659DB /* ZXHttpIPGet.h */; };
+		180572B52C269199007659DB /* ZXBlockLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805720F2C269199007659DB /* ZXBlockLog.h */; };
+		180572B62C269199007659DB /* ZXDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572262C269199007659DB /* ZXDataType.h */; };
+		180572B72C269199007659DB /* ZXImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805725A2C269199007659DB /* ZXImagePicker.m */; };
+		180572B82C269199007659DB /* NSObject+ZXSQliteHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805723D2C269199007659DB /* NSObject+ZXSQliteHandle.m */; };
+		180572B92C269199007659DB /* SqlResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805723F2C269199007659DB /* SqlResult.m */; };
+		180572BA2C269199007659DB /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571F42C269199007659DB /* Base64.m */; };
+		180572BB2C269199007659DB /* ZXClassPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572252C269199007659DB /* ZXClassPrint.m */; };
+		180572BC2C269199007659DB /* ZXHookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572772C269199007659DB /* ZXHookUtil.m */; };
+		180572BD2C269199007659DB /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572642C269199007659DB /* UIView+Toast.m */; };
+		180572BE2C269199007659DB /* ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572382C269199007659DB /* ZXDataConvert.m */; };
+		180572BF2C269199007659DB /* NSObject+ZXSafetySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805721F2C269199007659DB /* NSObject+ZXSafetySet.m */; };
+		180572C02C269199007659DB /* UIButton+ZXAddAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805726A2C269199007659DB /* UIButton+ZXAddAction.m */; };
+		180572C12C269199007659DB /* ZXHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571FD2C269199007659DB /* ZXHttpRequest.m */; };
+		180572C22C269199007659DB /* ZXHookClassPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572082C269199007659DB /* ZXHookClassPro.m */; };
+		180572C32C269199007659DB /* NSString+ZXRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572232C269199007659DB /* NSString+ZXRegular.m */; };
+		180572C42C269199007659DB /* ZXHookClassMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572062C269199007659DB /* ZXHookClassMethod.m */; };
+		180572C52C269199007659DB /* ZXBlockLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572102C269199007659DB /* ZXBlockLog.m */; };
+		180572C62C269199007659DB /* ZXMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805720B2C269199007659DB /* ZXMethodLog.m */; };
+		180572C72C269199007659DB /* ZXEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571FA2C269199007659DB /* ZXEncryption.m */; };
+		180572C82C269199007659DB /* ZXPoll.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805724D2C269199007659DB /* ZXPoll.m */; };
+		180572C92C269199007659DB /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571F72C269199007659DB /* CocoaSecurity.m */; };
+		180572CA2C269199007659DB /* ZXClassArchived.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572412C269199007659DB /* ZXClassArchived.m */; };
+		180572CB2C269199007659DB /* NSString+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572212C269199007659DB /* NSString+ZXDataConvert.m */; };
+		180572CC2C269199007659DB /* UIViewController+ZXHandleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571F12C269199007659DB /* UIViewController+ZXHandleLoad.m */; };
+		180572CD2C269199007659DB /* ZXShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805725F2C269199007659DB /* ZXShadowView.m */; };
+		180572CE2C269199007659DB /* NSMutableArray+ZXSafetySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572192C269199007659DB /* NSMutableArray+ZXSafetySet.m */; };
+		180572CF2C269199007659DB /* NSObject+ZXGetProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805721D2C269199007659DB /* NSObject+ZXGetProperty.m */; };
+		180572D02C269199007659DB /* ZXDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572272C269199007659DB /* ZXDataType.m */; };
+		180572D12C269199007659DB /* NSObject+ZXHookClassUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572022C269199007659DB /* NSObject+ZXHookClassUtil.m */; };
+		180572D22C269199007659DB /* NSDictionary+ZXSafetySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572172C269199007659DB /* NSDictionary+ZXSafetySet.m */; };
+		180572D32C269199007659DB /* ZXShowImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572612C269199007659DB /* ZXShowImgView.m */; };
+		180572D42C269199007659DB /* UIView+ZXHookUIGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805726F2C269199007659DB /* UIView+ZXHookUIGet.m */; };
+		180572D52C269199007659DB /* UIViewController+ZXAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572672C269199007659DB /* UIViewController+ZXAlert.m */; };
+		180572D62C269199007659DB /* ZXDataStoreSQlite.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572452C269199007659DB /* ZXDataStoreSQlite.m */; };
+		180572D72C269199007659DB /* ZXBlockLogTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572142C269199007659DB /* ZXBlockLogTool.m */; };
+		180572D82C269199007659DB /* ZXBlockLogResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572122C269199007659DB /* ZXBlockLogResult.m */; };
+		180572D92C269199007659DB /* ZXRequestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572542C269199007659DB /* ZXRequestBlock.m */; };
+		180572DA2C269199007659DB /* NSURLSession+ZXHttpProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572502C269199007659DB /* NSURLSession+ZXHttpProxy.m */; };
+		180572DB2C269199007659DB /* ZXHookClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572042C269199007659DB /* ZXHookClass.m */; };
+		180572DC2C269199007659DB /* NSData+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805722E2C269199007659DB /* NSData+ZXDataConvert.m */; };
+		180572DD2C269199007659DB /* UIView+ZXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805725D2C269199007659DB /* UIView+ZXFrame.m */; };
+		180572DE2C269199007659DB /* NSArray+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805722C2C269199007659DB /* NSArray+ZXDataConvert.m */; };
+		180572DF2C269199007659DB /* NSObject+ZXToJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572342C269199007659DB /* NSObject+ZXToJson.m */; };
+		180572E02C269199007659DB /* ZXDataConvertConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805723A2C269199007659DB /* ZXDataConvertConfig.m */; };
+		180572E12C269199007659DB /* ZXURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572562C269199007659DB /* ZXURLProtocol.m */; };
+		180572E22C269199007659DB /* ZXHttpIPGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572522C269199007659DB /* ZXHttpIPGet.m */; };
+		180572E32C269199007659DB /* NSObject+ZXHandleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571ED2C269199007659DB /* NSObject+ZXHandleLoad.m */; };
+		180572E42C269199007659DB /* ZXCodeFloor.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572752C269199007659DB /* ZXCodeFloor.m */; };
+		180572E52C269199007659DB /* NSObject+ZXToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572362C269199007659DB /* NSObject+ZXToModel.m */; };
+		180572E62C269199007659DB /* ZXHookUIGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572712C269199007659DB /* ZXHookUIGet.m */; };
+		180572E72C269199007659DB /* NSString+ZXHookRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571EF2C269199007659DB /* NSString+ZXHookRegular.m */; };
+		180572E82C269199007659DB /* ZXDataStoreCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572432C269199007659DB /* ZXDataStoreCache.m */; };
+		180572E92C269199007659DB /* NSDictionary+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572302C269199007659DB /* NSDictionary+ZXDataConvert.m */; };
+		180572EA2C269199007659DB /* UIButton+ZXHookAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805726C2C269199007659DB /* UIButton+ZXHookAction.m */; };
+		180572EB2C269199007659DB /* NSObject+ZXToDic.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572322C269199007659DB /* NSObject+ZXToDic.m */; };
+		180572EC2C269199007659DB /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805720E2C269199007659DB /* CTBlockDescription.m */; };
+		180572ED2C269199007659DB /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571EA2C269199007659DB /* JRSwizzle.m */; };
+		180572EE2C269199007659DB /* NSObject+ZXDataConvertRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805721B2C269199007659DB /* NSObject+ZXDataConvertRule.m */; };
+		180572EF2C269199007659DB /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572002C269199007659DB /* ANYMethodLog.m */; };
+		180572F02C269199007659DB /* ZXDecimalNumberTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572292C269199007659DB /* ZXDecimalNumberTool.m */; };
+		180572F12C269199007659DB /* USAGE.md in Resources */ = {isa = PBXBuildFile; fileRef = 180572472C269199007659DB /* USAGE.md */; };
+		180572F22C269199007659DB /* USAGE.md in Resources */ = {isa = PBXBuildFile; fileRef = 180572472C269199007659DB /* USAGE.md */; };
+		180572F32C269199007659DB /* ZXImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805725A2C269199007659DB /* ZXImagePicker.m */; };
+		180572F42C269199007659DB /* NSObject+ZXSQliteHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805723D2C269199007659DB /* NSObject+ZXSQliteHandle.m */; };
+		180572F52C269199007659DB /* SqlResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805723F2C269199007659DB /* SqlResult.m */; };
+		180572F62C269199007659DB /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571F42C269199007659DB /* Base64.m */; };
+		180572F72C269199007659DB /* ZXClassPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572252C269199007659DB /* ZXClassPrint.m */; };
+		180572F82C269199007659DB /* ZXHookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572772C269199007659DB /* ZXHookUtil.m */; };
+		180572F92C269199007659DB /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572642C269199007659DB /* UIView+Toast.m */; };
+		180572FA2C269199007659DB /* ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572382C269199007659DB /* ZXDataConvert.m */; };
+		180572FB2C269199007659DB /* NSObject+ZXSafetySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805721F2C269199007659DB /* NSObject+ZXSafetySet.m */; };
+		180572FC2C269199007659DB /* UIButton+ZXAddAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805726A2C269199007659DB /* UIButton+ZXAddAction.m */; };
+		180572FD2C269199007659DB /* ZXHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571FD2C269199007659DB /* ZXHttpRequest.m */; };
+		180572FE2C269199007659DB /* ZXHookClassPro.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572082C269199007659DB /* ZXHookClassPro.m */; };
+		180572FF2C269199007659DB /* NSString+ZXRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572232C269199007659DB /* NSString+ZXRegular.m */; };
+		180573002C269199007659DB /* ZXHookClassMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572062C269199007659DB /* ZXHookClassMethod.m */; };
+		180573012C269199007659DB /* ZXBlockLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572102C269199007659DB /* ZXBlockLog.m */; };
+		180573022C269199007659DB /* ZXMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805720B2C269199007659DB /* ZXMethodLog.m */; };
+		180573032C269199007659DB /* ZXEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571FA2C269199007659DB /* ZXEncryption.m */; };
+		180573042C269199007659DB /* ZXPoll.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805724D2C269199007659DB /* ZXPoll.m */; };
+		180573052C269199007659DB /* CocoaSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571F72C269199007659DB /* CocoaSecurity.m */; };
+		180573062C269199007659DB /* ZXClassArchived.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572412C269199007659DB /* ZXClassArchived.m */; };
+		180573072C269199007659DB /* NSString+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572212C269199007659DB /* NSString+ZXDataConvert.m */; };
+		180573082C269199007659DB /* UIViewController+ZXHandleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571F12C269199007659DB /* UIViewController+ZXHandleLoad.m */; };
+		180573092C269199007659DB /* ZXShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805725F2C269199007659DB /* ZXShadowView.m */; };
+		1805730A2C269199007659DB /* NSMutableArray+ZXSafetySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572192C269199007659DB /* NSMutableArray+ZXSafetySet.m */; };
+		1805730B2C269199007659DB /* NSObject+ZXGetProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805721D2C269199007659DB /* NSObject+ZXGetProperty.m */; };
+		1805730C2C269199007659DB /* ZXDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572272C269199007659DB /* ZXDataType.m */; };
+		1805730D2C269199007659DB /* NSObject+ZXHookClassUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572022C269199007659DB /* NSObject+ZXHookClassUtil.m */; };
+		1805730E2C269199007659DB /* NSDictionary+ZXSafetySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572172C269199007659DB /* NSDictionary+ZXSafetySet.m */; };
+		1805730F2C269199007659DB /* ZXShowImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572612C269199007659DB /* ZXShowImgView.m */; };
+		180573102C269199007659DB /* UIView+ZXHookUIGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805726F2C269199007659DB /* UIView+ZXHookUIGet.m */; };
+		180573112C269199007659DB /* UIViewController+ZXAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572672C269199007659DB /* UIViewController+ZXAlert.m */; };
+		180573122C269199007659DB /* ZXDataStoreSQlite.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572452C269199007659DB /* ZXDataStoreSQlite.m */; };
+		180573132C269199007659DB /* ZXBlockLogTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572142C269199007659DB /* ZXBlockLogTool.m */; };
+		180573142C269199007659DB /* ZXBlockLogResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572122C269199007659DB /* ZXBlockLogResult.m */; };
+		180573152C269199007659DB /* ZXRequestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572542C269199007659DB /* ZXRequestBlock.m */; };
+		180573162C269199007659DB /* NSURLSession+ZXHttpProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572502C269199007659DB /* NSURLSession+ZXHttpProxy.m */; };
+		180573172C269199007659DB /* ZXHookClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572042C269199007659DB /* ZXHookClass.m */; };
+		180573182C269199007659DB /* NSData+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805722E2C269199007659DB /* NSData+ZXDataConvert.m */; };
+		180573192C269199007659DB /* UIView+ZXFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805725D2C269199007659DB /* UIView+ZXFrame.m */; };
+		1805731A2C269199007659DB /* NSArray+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805722C2C269199007659DB /* NSArray+ZXDataConvert.m */; };
+		1805731B2C269199007659DB /* NSObject+ZXToJson.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572342C269199007659DB /* NSObject+ZXToJson.m */; };
+		1805731C2C269199007659DB /* ZXDataConvertConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805723A2C269199007659DB /* ZXDataConvertConfig.m */; };
+		1805731D2C269199007659DB /* ZXURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572562C269199007659DB /* ZXURLProtocol.m */; };
+		1805731E2C269199007659DB /* ZXHttpIPGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572522C269199007659DB /* ZXHttpIPGet.m */; };
+		1805731F2C269199007659DB /* NSObject+ZXHandleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571ED2C269199007659DB /* NSObject+ZXHandleLoad.m */; };
+		180573202C269199007659DB /* ZXCodeFloor.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572752C269199007659DB /* ZXCodeFloor.m */; };
+		180573212C269199007659DB /* NSObject+ZXToModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572362C269199007659DB /* NSObject+ZXToModel.m */; };
+		180573222C269199007659DB /* ZXHookUIGet.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572712C269199007659DB /* ZXHookUIGet.m */; };
+		180573232C269199007659DB /* NSString+ZXHookRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571EF2C269199007659DB /* NSString+ZXHookRegular.m */; };
+		180573242C269199007659DB /* ZXDataStoreCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572432C269199007659DB /* ZXDataStoreCache.m */; };
+		180573252C269199007659DB /* NSDictionary+ZXDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572302C269199007659DB /* NSDictionary+ZXDataConvert.m */; };
+		180573262C269199007659DB /* UIButton+ZXHookAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805726C2C269199007659DB /* UIButton+ZXHookAction.m */; };
+		180573272C269199007659DB /* NSObject+ZXToDic.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572322C269199007659DB /* NSObject+ZXToDic.m */; };
+		180573282C269199007659DB /* CTBlockDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805720E2C269199007659DB /* CTBlockDescription.m */; };
+		180573292C269199007659DB /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 180571EA2C269199007659DB /* JRSwizzle.m */; };
+		1805732A2C269199007659DB /* NSObject+ZXDataConvertRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805721B2C269199007659DB /* NSObject+ZXDataConvertRule.m */; };
+		1805732B2C269199007659DB /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572002C269199007659DB /* ANYMethodLog.m */; };
+		1805732C2C269199007659DB /* ZXDecimalNumberTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180572292C269199007659DB /* ZXDecimalNumberTool.m */; };
+		1805732D2C269199007659DB /* UIButton+ZXHookAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805726B2C269199007659DB /* UIButton+ZXHookAction.h */; };
+		1805732E2C269199007659DB /* ZXBlockLogResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572112C269199007659DB /* ZXBlockLogResult.h */; };
+		1805732F2C269199007659DB /* ZXHookUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572762C269199007659DB /* ZXHookUtil.h */; };
+		180573302C269199007659DB /* ZXDataStoreCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572422C269199007659DB /* ZXDataStoreCache.h */; };
+		180573312C269199007659DB /* NSObject+ZXToJson.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572332C269199007659DB /* NSObject+ZXToJson.h */; };
+		180573322C269199007659DB /* NSMutableArray+ZXSafetySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572182C269199007659DB /* NSMutableArray+ZXSafetySet.h */; };
+		180573332C269199007659DB /* NSString+ZXHookRegular.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571EE2C269199007659DB /* NSString+ZXHookRegular.h */; };
+		180573342C269199007659DB /* ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572372C269199007659DB /* ZXDataConvert.h */; };
+		180573352C269199007659DB /* ZXShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805725E2C269199007659DB /* ZXShadowView.h */; };
+		180573362C269199007659DB /* ZXURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572552C269199007659DB /* ZXURLProtocol.h */; };
+		180573372C269199007659DB /* ZXCodeFloor.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572742C269199007659DB /* ZXCodeFloor.h */; };
+		180573382C269199007659DB /* UUCaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571E72C269199007659DB /* UUCaptainHook.h */; };
+		180573392C269199007659DB /* UIView+ZXFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805725C2C269199007659DB /* UIView+ZXFrame.h */; };
+		1805733A2C269199007659DB /* NSObject+ZXToModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572352C269199007659DB /* NSObject+ZXToModel.h */; };
+		1805733B2C269199007659DB /* NSObject+ZXSafetySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805721E2C269199007659DB /* NSObject+ZXSafetySet.h */; };
+		1805733C2C269199007659DB /* ZXDataConvertConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572392C269199007659DB /* ZXDataConvertConfig.h */; };
+		1805733D2C269199007659DB /* ZXBlockLogTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572132C269199007659DB /* ZXBlockLogTool.h */; };
+		1805733E2C269199007659DB /* ZXDecimalNumberTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572282C269199007659DB /* ZXDecimalNumberTool.h */; };
+		1805733F2C269199007659DB /* ZXHookClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572032C269199007659DB /* ZXHookClass.h */; };
+		180573402C269199007659DB /* ZXEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571F92C269199007659DB /* ZXEncryption.h */; };
+		180573412C269199007659DB /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571FF2C269199007659DB /* ANYMethodLog.h */; };
+		180573422C269199007659DB /* ZXDataHandleLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805724A2C269199007659DB /* ZXDataHandleLog.h */; };
+		180573432C269199007659DB /* NSObject+ZXHookClassUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572012C269199007659DB /* NSObject+ZXHookClassUtil.h */; };
+		180573442C269199007659DB /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572632C269199007659DB /* UIView+Toast.h */; };
+		180573452C269199007659DB /* ZXMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805720A2C269199007659DB /* ZXMethodLog.h */; };
+		180573462C269199007659DB /* NSObject+ZXToDic.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572312C269199007659DB /* NSObject+ZXToDic.h */; };
+		180573472C269199007659DB /* UIButton+ZXAddAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572692C269199007659DB /* UIButton+ZXAddAction.h */; };
+		180573482C269199007659DB /* ZXImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572592C269199007659DB /* ZXImagePicker.h */; };
+		180573492C269199007659DB /* NSObject+ZXSQliteHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805723C2C269199007659DB /* NSObject+ZXSQliteHandle.h */; };
+		1805734A2C269199007659DB /* SqlResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805723E2C269199007659DB /* SqlResult.h */; };
+		1805734B2C269199007659DB /* ZXDataHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572482C269199007659DB /* ZXDataHandle.h */; };
+		1805734C2C269199007659DB /* NSString+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572202C269199007659DB /* NSString+ZXDataConvert.h */; };
+		1805734D2C269199007659DB /* CocoaSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571F62C269199007659DB /* CocoaSecurity.h */; };
+		1805734E2C269199007659DB /* NSDictionary+ZXSafetySet.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572162C269199007659DB /* NSDictionary+ZXSafetySet.h */; };
+		1805734F2C269199007659DB /* ZXClassArchived.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572402C269199007659DB /* ZXClassArchived.h */; };
+		180573502C269199007659DB /* ZXDataHandleHeaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572492C269199007659DB /* ZXDataHandleHeaders.h */; };
+		180573512C269199007659DB /* ZXRequestBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572532C269199007659DB /* ZXRequestBlock.h */; };
+		180573522C269199007659DB /* NSData+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805722D2C269199007659DB /* NSData+ZXDataConvert.h */; };
+		180573532C269199007659DB /* ZXDataStoreSQlite.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572442C269199007659DB /* ZXDataStoreSQlite.h */; };
+		180573542C269199007659DB /* UIViewController+ZXHandleLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571F02C269199007659DB /* UIViewController+ZXHandleLoad.h */; };
+		180573552C269199007659DB /* ZXHookUIGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572702C269199007659DB /* ZXHookUIGet.h */; };
+		180573562C269199007659DB /* Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571F32C269199007659DB /* Base64.h */; };
+		180573572C269199007659DB /* ZXPoll.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805724C2C269199007659DB /* ZXPoll.h */; };
+		180573582C269199007659DB /* NSURLSession+ZXHttpProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805724F2C269199007659DB /* NSURLSession+ZXHttpProxy.h */; };
+		180573592C269199007659DB /* NSObject+ZXHandleLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571EC2C269199007659DB /* NSObject+ZXHandleLoad.h */; };
+		1805735A2C269199007659DB /* ZXHookClassMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572052C269199007659DB /* ZXHookClassMethod.h */; };
+		1805735B2C269199007659DB /* CTBlockDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805720D2C269199007659DB /* CTBlockDescription.h */; };
+		1805735C2C269199007659DB /* NSDictionary+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805722F2C269199007659DB /* NSDictionary+ZXDataConvert.h */; };
+		1805735D2C269199007659DB /* ZXHttpRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571FC2C269199007659DB /* ZXHttpRequest.h */; };
+		1805735E2C269199007659DB /* NSArray+ZXDataConvert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805722B2C269199007659DB /* NSArray+ZXDataConvert.h */; };
+		1805735F2C269199007659DB /* UIViewController+ZXAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572662C269199007659DB /* UIViewController+ZXAlert.h */; };
+		180573602C269199007659DB /* UIView+ZXHookUIGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805726E2C269199007659DB /* UIView+ZXHookUIGet.h */; };
+		180573612C269199007659DB /* ZXClassPrint.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572242C269199007659DB /* ZXClassPrint.h */; };
+		180573622C269199007659DB /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 180571E92C269199007659DB /* JRSwizzle.h */; };
+		180573632C269199007659DB /* NSObject+ZXGetProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805721C2C269199007659DB /* NSObject+ZXGetProperty.h */; };
+		180573642C269199007659DB /* ZXHookClassPro.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572072C269199007659DB /* ZXHookClassPro.h */; };
+		180573652C269199007659DB /* ZXShowImgView.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572602C269199007659DB /* ZXShowImgView.h */; };
+		180573662C269199007659DB /* NSObject+ZXDataConvertRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805721A2C269199007659DB /* NSObject+ZXDataConvertRule.h */; };
+		180573672C269199007659DB /* NSString+ZXRegular.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572222C269199007659DB /* NSString+ZXRegular.h */; };
+		180573682C269199007659DB /* ZXHttpIPGet.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572512C269199007659DB /* ZXHttpIPGet.h */; };
+		180573692C269199007659DB /* ZXBlockLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805720F2C269199007659DB /* ZXBlockLog.h */; };
+		1805736A2C269199007659DB /* ZXDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572262C269199007659DB /* ZXDataType.h */; };
+		1805736D2C2691A6007659DB /* HookTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805736B2C2691A6007659DB /* HookTools.h */; };
+		1805736E2C2691A6007659DB /* HookTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805736C2C2691A6007659DB /* HookTools.m */; };
+		1805736F2C2691A6007659DB /* HookTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805736C2C2691A6007659DB /* HookTools.m */; };
+		180573702C2691A6007659DB /* HookTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805736B2C2691A6007659DB /* HookTools.h */; };
+		180573802C2691F8007659DB /* HookURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573762C2691F8007659DB /* HookURLProtocol.h */; };
+		180573812C2691F8007659DB /* BundleReplace.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573712C2691F8007659DB /* BundleReplace.h */; };
+		180573822C2691F8007659DB /* CustomURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573742C2691F8007659DB /* CustomURLProtocol.h */; };
+		180573832C2691F8007659DB /* UIViewController+Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805737C2C2691F8007659DB /* UIViewController+Screen.h */; };
+		180573842C2691F8007659DB /* PermissionCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573792C2691F8007659DB /* PermissionCheck.h */; };
+		180573852C2691F8007659DB /* UIViewController+Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805737D2C2691F8007659DB /* UIViewController+Screen.m */; };
+		180573862C2691F8007659DB /* HookURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 180573772C2691F8007659DB /* HookURLProtocol.m */; };
+		180573872C2691F8007659DB /* PermissionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805737A2C2691F8007659DB /* PermissionCheck.m */; };
+		180573882C2691F8007659DB /* CustomURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 180573752C2691F8007659DB /* CustomURLProtocol.m */; };
+		180573892C2691F8007659DB /* BundleReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 180573722C2691F8007659DB /* BundleReplace.m */; };
+		1805738A2C2691F8007659DB /* UIViewController+Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805737D2C2691F8007659DB /* UIViewController+Screen.m */; };
+		1805738B2C2691F8007659DB /* HookURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 180573772C2691F8007659DB /* HookURLProtocol.m */; };
+		1805738C2C2691F8007659DB /* PermissionCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805737A2C2691F8007659DB /* PermissionCheck.m */; };
+		1805738D2C2691F8007659DB /* CustomURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 180573752C2691F8007659DB /* CustomURLProtocol.m */; };
+		1805738E2C2691F8007659DB /* BundleReplace.m in Sources */ = {isa = PBXBuildFile; fileRef = 180573722C2691F8007659DB /* BundleReplace.m */; };
+		1805738F2C2691F8007659DB /* HookURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573762C2691F8007659DB /* HookURLProtocol.h */; };
+		180573902C2691F8007659DB /* BundleReplace.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573712C2691F8007659DB /* BundleReplace.h */; };
+		180573912C2691F8007659DB /* CustomURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573742C2691F8007659DB /* CustomURLProtocol.h */; };
+		180573922C2691F8007659DB /* UIViewController+Screen.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805737C2C2691F8007659DB /* UIViewController+Screen.h */; };
+		180573932C2691F8007659DB /* PermissionCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573792C2691F8007659DB /* PermissionCheck.h */; };
+		180573962C269210007659DB /* PatchSVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573942C269210007659DB /* PatchSVC.h */; };
+		180573972C269210007659DB /* PatchSVC.c in Sources */ = {isa = PBXBuildFile; fileRef = 180573952C269210007659DB /* PatchSVC.c */; };
+		180573982C269210007659DB /* PatchSVC.c in Sources */ = {isa = PBXBuildFile; fileRef = 180573952C269210007659DB /* PatchSVC.c */; };
+		180573992C269210007659DB /* PatchSVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573942C269210007659DB /* PatchSVC.h */; };
+		C63AC1A51E838BB70094B1C5 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = C63AC1A21E838BB70094B1C5 /* fishhook.c */; };
+		C63AC1A61E838BB70094B1C5 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = C63AC1A31E838BB70094B1C5 /* fishhook.h */; };
+		C63AC1AA1E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = C63AC1A81E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h */; };
+		C63AC1AB1E8392210094B1C5 /* IPAPatchBypassAntiDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = C63AC1A91E8392210094B1C5 /* IPAPatchBypassAntiDebugging.m */; };
+		C64288391E7BF9E900C0BBB0 /* ProjectConfigurationWarning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C64288371E7BF9E900C0BBB0 /* ProjectConfigurationWarning.cpp */; };
+		C698B9F82986148600BB5DC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C698B9F72986148600BB5DC9 /* AppDelegate.m */; };
+		C698BA022986148700BB5DC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C698BA012986148700BB5DC9 /* main.m */; };
+		C698BA0A29861BA800BB5DC9 /* ProjectConfigurationWarning.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C64288371E7BF9E900C0BBB0 /* ProjectConfigurationWarning.cpp */; };
+		C698BA1329861E8C00BB5DC9 /* IPAPatchFrameworkMac.h in Headers */ = {isa = PBXBuildFile; fileRef = C698BA1229861E8C00BB5DC9 /* IPAPatchFrameworkMac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C698BA1C29861ED700BB5DC9 /* IPAPatchEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B263261E7BC9DF009B4DEA /* IPAPatchEntry.m */; };
+		C698BA1D29861EDA00BB5DC9 /* IPAPatchBypassAntiDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = C63AC1A91E8392210094B1C5 /* IPAPatchBypassAntiDebugging.m */; };
+		C698BA1E29861EDE00BB5DC9 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = C63AC1A21E838BB70094B1C5 /* fishhook.c */; };
+		C6A353E21F51367500A9E30D /* options.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6A353E11F51367500A9E30D /* options.plist */; };
+		C6B263271E7BC9DF009B4DEA /* IPAPatchEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = C6B263251E7BC9DF009B4DEA /* IPAPatchEntry.h */; };
+		C6B263281E7BC9DF009B4DEA /* IPAPatchEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B263261E7BC9DF009B4DEA /* IPAPatchEntry.m */; };
+		C6B2634D1E7BCB31009B4DEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B2634C1E7BCB31009B4DEA /* main.m */; };
+		C6B263501E7BCB31009B4DEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B2634F1E7BCB31009B4DEA /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C698BA1429861E8C00BB5DC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6B262FE1E7BC97B009B4DEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C698BA0F29861E8B00BB5DC9;
+			remoteInfo = IPAPatchFrameworkMac;
+		};
+		C6B263601E7BCC65009B4DEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6B262FE1E7BC97B009B4DEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6B263061E7BC97B009B4DEA;
+			remoteInfo = IPAPatch;
+		};
+		C6DDBB601F51469300A42BE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6B262FE1E7BC97B009B4DEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6B263481E7BCB31009B4DEA;
+			remoteInfo = "IPAPatch-DummyApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180571E72C269199007659DB /* UUCaptainHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UUCaptainHook.h; sourceTree = "<group>"; };
+		180571E92C269199007659DB /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		180571EA2C269199007659DB /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		180571EC2C269199007659DB /* NSObject+ZXHandleLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXHandleLoad.h"; sourceTree = "<group>"; };
+		180571ED2C269199007659DB /* NSObject+ZXHandleLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXHandleLoad.m"; sourceTree = "<group>"; };
+		180571EE2C269199007659DB /* NSString+ZXHookRegular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXHookRegular.h"; sourceTree = "<group>"; };
+		180571EF2C269199007659DB /* NSString+ZXHookRegular.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXHookRegular.m"; sourceTree = "<group>"; };
+		180571F02C269199007659DB /* UIViewController+ZXHandleLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZXHandleLoad.h"; sourceTree = "<group>"; };
+		180571F12C269199007659DB /* UIViewController+ZXHandleLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZXHandleLoad.m"; sourceTree = "<group>"; };
+		180571F32C269199007659DB /* Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		180571F42C269199007659DB /* Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		180571F62C269199007659DB /* CocoaSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaSecurity.h; sourceTree = "<group>"; };
+		180571F72C269199007659DB /* CocoaSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaSecurity.m; sourceTree = "<group>"; };
+		180571F92C269199007659DB /* ZXEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXEncryption.h; sourceTree = "<group>"; };
+		180571FA2C269199007659DB /* ZXEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXEncryption.m; sourceTree = "<group>"; };
+		180571FC2C269199007659DB /* ZXHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHttpRequest.h; sourceTree = "<group>"; };
+		180571FD2C269199007659DB /* ZXHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHttpRequest.m; sourceTree = "<group>"; };
+		180571FF2C269199007659DB /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANYMethodLog.h; sourceTree = "<group>"; };
+		180572002C269199007659DB /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANYMethodLog.m; sourceTree = "<group>"; };
+		180572012C269199007659DB /* NSObject+ZXHookClassUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXHookClassUtil.h"; sourceTree = "<group>"; };
+		180572022C269199007659DB /* NSObject+ZXHookClassUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXHookClassUtil.m"; sourceTree = "<group>"; };
+		180572032C269199007659DB /* ZXHookClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHookClass.h; sourceTree = "<group>"; };
+		180572042C269199007659DB /* ZXHookClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHookClass.m; sourceTree = "<group>"; };
+		180572052C269199007659DB /* ZXHookClassMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHookClassMethod.h; sourceTree = "<group>"; };
+		180572062C269199007659DB /* ZXHookClassMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHookClassMethod.m; sourceTree = "<group>"; };
+		180572072C269199007659DB /* ZXHookClassPro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHookClassPro.h; sourceTree = "<group>"; };
+		180572082C269199007659DB /* ZXHookClassPro.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHookClassPro.m; sourceTree = "<group>"; };
+		1805720A2C269199007659DB /* ZXMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXMethodLog.h; sourceTree = "<group>"; };
+		1805720B2C269199007659DB /* ZXMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXMethodLog.m; sourceTree = "<group>"; };
+		1805720D2C269199007659DB /* CTBlockDescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTBlockDescription.h; sourceTree = "<group>"; };
+		1805720E2C269199007659DB /* CTBlockDescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTBlockDescription.m; sourceTree = "<group>"; };
+		1805720F2C269199007659DB /* ZXBlockLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXBlockLog.h; sourceTree = "<group>"; };
+		180572102C269199007659DB /* ZXBlockLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXBlockLog.m; sourceTree = "<group>"; };
+		180572112C269199007659DB /* ZXBlockLogResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXBlockLogResult.h; sourceTree = "<group>"; };
+		180572122C269199007659DB /* ZXBlockLogResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXBlockLogResult.m; sourceTree = "<group>"; };
+		180572132C269199007659DB /* ZXBlockLogTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXBlockLogTool.h; sourceTree = "<group>"; };
+		180572142C269199007659DB /* ZXBlockLogTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXBlockLogTool.m; sourceTree = "<group>"; };
+		180572162C269199007659DB /* NSDictionary+ZXSafetySet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZXSafetySet.h"; sourceTree = "<group>"; };
+		180572172C269199007659DB /* NSDictionary+ZXSafetySet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZXSafetySet.m"; sourceTree = "<group>"; };
+		180572182C269199007659DB /* NSMutableArray+ZXSafetySet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ZXSafetySet.h"; sourceTree = "<group>"; };
+		180572192C269199007659DB /* NSMutableArray+ZXSafetySet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ZXSafetySet.m"; sourceTree = "<group>"; };
+		1805721A2C269199007659DB /* NSObject+ZXDataConvertRule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXDataConvertRule.h"; sourceTree = "<group>"; };
+		1805721B2C269199007659DB /* NSObject+ZXDataConvertRule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXDataConvertRule.m"; sourceTree = "<group>"; };
+		1805721C2C269199007659DB /* NSObject+ZXGetProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXGetProperty.h"; sourceTree = "<group>"; };
+		1805721D2C269199007659DB /* NSObject+ZXGetProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXGetProperty.m"; sourceTree = "<group>"; };
+		1805721E2C269199007659DB /* NSObject+ZXSafetySet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXSafetySet.h"; sourceTree = "<group>"; };
+		1805721F2C269199007659DB /* NSObject+ZXSafetySet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXSafetySet.m"; sourceTree = "<group>"; };
+		180572202C269199007659DB /* NSString+ZXDataConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXDataConvert.h"; sourceTree = "<group>"; };
+		180572212C269199007659DB /* NSString+ZXDataConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXDataConvert.m"; sourceTree = "<group>"; };
+		180572222C269199007659DB /* NSString+ZXRegular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ZXRegular.h"; sourceTree = "<group>"; };
+		180572232C269199007659DB /* NSString+ZXRegular.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZXRegular.m"; sourceTree = "<group>"; };
+		180572242C269199007659DB /* ZXClassPrint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXClassPrint.h; sourceTree = "<group>"; };
+		180572252C269199007659DB /* ZXClassPrint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXClassPrint.m; sourceTree = "<group>"; };
+		180572262C269199007659DB /* ZXDataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataType.h; sourceTree = "<group>"; };
+		180572272C269199007659DB /* ZXDataType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDataType.m; sourceTree = "<group>"; };
+		180572282C269199007659DB /* ZXDecimalNumberTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDecimalNumberTool.h; sourceTree = "<group>"; };
+		180572292C269199007659DB /* ZXDecimalNumberTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDecimalNumberTool.m; sourceTree = "<group>"; };
+		1805722B2C269199007659DB /* NSArray+ZXDataConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZXDataConvert.h"; sourceTree = "<group>"; };
+		1805722C2C269199007659DB /* NSArray+ZXDataConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZXDataConvert.m"; sourceTree = "<group>"; };
+		1805722D2C269199007659DB /* NSData+ZXDataConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+ZXDataConvert.h"; sourceTree = "<group>"; };
+		1805722E2C269199007659DB /* NSData+ZXDataConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+ZXDataConvert.m"; sourceTree = "<group>"; };
+		1805722F2C269199007659DB /* NSDictionary+ZXDataConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ZXDataConvert.h"; sourceTree = "<group>"; };
+		180572302C269199007659DB /* NSDictionary+ZXDataConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ZXDataConvert.m"; sourceTree = "<group>"; };
+		180572312C269199007659DB /* NSObject+ZXToDic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXToDic.h"; sourceTree = "<group>"; };
+		180572322C269199007659DB /* NSObject+ZXToDic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXToDic.m"; sourceTree = "<group>"; };
+		180572332C269199007659DB /* NSObject+ZXToJson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXToJson.h"; sourceTree = "<group>"; };
+		180572342C269199007659DB /* NSObject+ZXToJson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXToJson.m"; sourceTree = "<group>"; };
+		180572352C269199007659DB /* NSObject+ZXToModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXToModel.h"; sourceTree = "<group>"; };
+		180572362C269199007659DB /* NSObject+ZXToModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXToModel.m"; sourceTree = "<group>"; };
+		180572372C269199007659DB /* ZXDataConvert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataConvert.h; sourceTree = "<group>"; };
+		180572382C269199007659DB /* ZXDataConvert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDataConvert.m; sourceTree = "<group>"; };
+		180572392C269199007659DB /* ZXDataConvertConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataConvertConfig.h; sourceTree = "<group>"; };
+		1805723A2C269199007659DB /* ZXDataConvertConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDataConvertConfig.m; sourceTree = "<group>"; };
+		1805723C2C269199007659DB /* NSObject+ZXSQliteHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZXSQliteHandle.h"; sourceTree = "<group>"; };
+		1805723D2C269199007659DB /* NSObject+ZXSQliteHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZXSQliteHandle.m"; sourceTree = "<group>"; };
+		1805723E2C269199007659DB /* SqlResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqlResult.h; sourceTree = "<group>"; };
+		1805723F2C269199007659DB /* SqlResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlResult.m; sourceTree = "<group>"; };
+		180572402C269199007659DB /* ZXClassArchived.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXClassArchived.h; sourceTree = "<group>"; };
+		180572412C269199007659DB /* ZXClassArchived.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXClassArchived.m; sourceTree = "<group>"; };
+		180572422C269199007659DB /* ZXDataStoreCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataStoreCache.h; sourceTree = "<group>"; };
+		180572432C269199007659DB /* ZXDataStoreCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDataStoreCache.m; sourceTree = "<group>"; };
+		180572442C269199007659DB /* ZXDataStoreSQlite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataStoreSQlite.h; sourceTree = "<group>"; };
+		180572452C269199007659DB /* ZXDataStoreSQlite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDataStoreSQlite.m; sourceTree = "<group>"; };
+		180572472C269199007659DB /* USAGE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = USAGE.md; sourceTree = "<group>"; };
+		180572482C269199007659DB /* ZXDataHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataHandle.h; sourceTree = "<group>"; };
+		180572492C269199007659DB /* ZXDataHandleHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataHandleHeaders.h; sourceTree = "<group>"; };
+		1805724A2C269199007659DB /* ZXDataHandleLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDataHandleLog.h; sourceTree = "<group>"; };
+		1805724C2C269199007659DB /* ZXPoll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXPoll.h; sourceTree = "<group>"; };
+		1805724D2C269199007659DB /* ZXPoll.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXPoll.m; sourceTree = "<group>"; };
+		1805724F2C269199007659DB /* NSURLSession+ZXHttpProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+ZXHttpProxy.h"; sourceTree = "<group>"; };
+		180572502C269199007659DB /* NSURLSession+ZXHttpProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+ZXHttpProxy.m"; sourceTree = "<group>"; };
+		180572512C269199007659DB /* ZXHttpIPGet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHttpIPGet.h; sourceTree = "<group>"; };
+		180572522C269199007659DB /* ZXHttpIPGet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHttpIPGet.m; sourceTree = "<group>"; };
+		180572532C269199007659DB /* ZXRequestBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXRequestBlock.h; sourceTree = "<group>"; };
+		180572542C269199007659DB /* ZXRequestBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXRequestBlock.m; sourceTree = "<group>"; };
+		180572552C269199007659DB /* ZXURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXURLProtocol.h; sourceTree = "<group>"; };
+		180572562C269199007659DB /* ZXURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXURLProtocol.m; sourceTree = "<group>"; };
+		180572592C269199007659DB /* ZXImagePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXImagePicker.h; sourceTree = "<group>"; };
+		1805725A2C269199007659DB /* ZXImagePicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXImagePicker.m; sourceTree = "<group>"; };
+		1805725C2C269199007659DB /* UIView+ZXFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXFrame.h"; sourceTree = "<group>"; };
+		1805725D2C269199007659DB /* UIView+ZXFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXFrame.m"; sourceTree = "<group>"; };
+		1805725E2C269199007659DB /* ZXShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXShadowView.h; sourceTree = "<group>"; };
+		1805725F2C269199007659DB /* ZXShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXShadowView.m; sourceTree = "<group>"; };
+		180572602C269199007659DB /* ZXShowImgView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXShowImgView.h; sourceTree = "<group>"; };
+		180572612C269199007659DB /* ZXShowImgView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXShowImgView.m; sourceTree = "<group>"; };
+		180572632C269199007659DB /* UIView+Toast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		180572642C269199007659DB /* UIView+Toast.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		180572662C269199007659DB /* UIViewController+ZXAlert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZXAlert.h"; sourceTree = "<group>"; };
+		180572672C269199007659DB /* UIViewController+ZXAlert.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZXAlert.m"; sourceTree = "<group>"; };
+		180572692C269199007659DB /* UIButton+ZXAddAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZXAddAction.h"; sourceTree = "<group>"; };
+		1805726A2C269199007659DB /* UIButton+ZXAddAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZXAddAction.m"; sourceTree = "<group>"; };
+		1805726B2C269199007659DB /* UIButton+ZXHookAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ZXHookAction.h"; sourceTree = "<group>"; };
+		1805726C2C269199007659DB /* UIButton+ZXHookAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ZXHookAction.m"; sourceTree = "<group>"; };
+		1805726E2C269199007659DB /* UIView+ZXHookUIGet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXHookUIGet.h"; sourceTree = "<group>"; };
+		1805726F2C269199007659DB /* UIView+ZXHookUIGet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXHookUIGet.m"; sourceTree = "<group>"; };
+		180572702C269199007659DB /* ZXHookUIGet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHookUIGet.h; sourceTree = "<group>"; };
+		180572712C269199007659DB /* ZXHookUIGet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHookUIGet.m; sourceTree = "<group>"; };
+		180572742C269199007659DB /* ZXCodeFloor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXCodeFloor.h; sourceTree = "<group>"; };
+		180572752C269199007659DB /* ZXCodeFloor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXCodeFloor.m; sourceTree = "<group>"; };
+		180572762C269199007659DB /* ZXHookUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXHookUtil.h; sourceTree = "<group>"; };
+		180572772C269199007659DB /* ZXHookUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXHookUtil.m; sourceTree = "<group>"; };
+		1805736B2C2691A6007659DB /* HookTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookTools.h; sourceTree = "<group>"; };
+		1805736C2C2691A6007659DB /* HookTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookTools.m; sourceTree = "<group>"; };
+		180573712C2691F8007659DB /* BundleReplace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BundleReplace.h; sourceTree = "<group>"; };
+		180573722C2691F8007659DB /* BundleReplace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BundleReplace.m; sourceTree = "<group>"; };
+		180573742C2691F8007659DB /* CustomURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomURLProtocol.h; sourceTree = "<group>"; };
+		180573752C2691F8007659DB /* CustomURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomURLProtocol.m; sourceTree = "<group>"; };
+		180573762C2691F8007659DB /* HookURLProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookURLProtocol.h; sourceTree = "<group>"; };
+		180573772C2691F8007659DB /* HookURLProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookURLProtocol.m; sourceTree = "<group>"; };
+		180573792C2691F8007659DB /* PermissionCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermissionCheck.h; sourceTree = "<group>"; };
+		1805737A2C2691F8007659DB /* PermissionCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PermissionCheck.m; sourceTree = "<group>"; };
+		1805737C2C2691F8007659DB /* UIViewController+Screen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Screen.h"; sourceTree = "<group>"; };
+		1805737D2C2691F8007659DB /* UIViewController+Screen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Screen.m"; sourceTree = "<group>"; };
+		180573942C269210007659DB /* PatchSVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatchSVC.h; sourceTree = "<group>"; };
+		180573952C269210007659DB /* PatchSVC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PatchSVC.c; sourceTree = "<group>"; };
+		C63AC1A21E838BB70094B1C5 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		C63AC1A31E838BB70094B1C5 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		C63AC1A41E838BB70094B1C5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C63AC1A81E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAPatchBypassAntiDebugging.h; sourceTree = "<group>"; };
+		C63AC1A91E8392210094B1C5 /* IPAPatchBypassAntiDebugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAPatchBypassAntiDebugging.m; sourceTree = "<group>"; };
+		C64288371E7BF9E900C0BBB0 /* ProjectConfigurationWarning.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProjectConfigurationWarning.cpp; sourceTree = "<group>"; };
+		C64288381E7BF9E900C0BBB0 /* ProjectConfigurationWarning.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProjectConfigurationWarning.hpp; sourceTree = "<group>"; };
+		C698B9F42986148600BB5DC9 /* IPAPatch-MacDummyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IPAPatch-MacDummyApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C698B9F62986148600BB5DC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C698B9F72986148600BB5DC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C698BA012986148700BB5DC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C698BA1029861E8B00BB5DC9 /* IPAPatchFrameworkMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IPAPatchFrameworkMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C698BA1229861E8C00BB5DC9 /* IPAPatchFrameworkMac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPAPatchFrameworkMac.h; sourceTree = "<group>"; };
+		C6A353E11F51367500A9E30D /* options.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = options.plist; sourceTree = "<group>"; };
+		C6B263071E7BC97B009B4DEA /* IPAPatchFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IPAPatchFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B2630B1E7BC97B009B4DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B263251E7BC9DF009B4DEA /* IPAPatchEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPAPatchEntry.h; sourceTree = "<group>"; };
+		C6B263261E7BC9DF009B4DEA /* IPAPatchEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPAPatchEntry.m; sourceTree = "<group>"; };
+		C6B263491E7BCB31009B4DEA /* IPAPatch-DummyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IPAPatch-DummyApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B2634C1E7BCB31009B4DEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6B2634E1E7BCB31009B4DEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6B2634F1E7BCB31009B4DEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6B2635C1E7BCB31009B4DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B263621E7BCD03009B4DEA /* patch.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = patch.sh; sourceTree = "<group>"; };
+		C6DDBB621F5146AD00A42BE2 /* create_ipa.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = create_ipa.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C698B9F12986148600BB5DC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C698BA0D29861E8B00BB5DC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B263031E7BC97B009B4DEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B263461E7BCB31009B4DEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180571E82C269199007659DB /* CaptainHook */ = {
+			isa = PBXGroup;
+			children = (
+				180571E72C269199007659DB /* UUCaptainHook.h */,
+			);
+			path = CaptainHook;
+			sourceTree = "<group>";
+		};
+		180571EB2C269199007659DB /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				180571E92C269199007659DB /* JRSwizzle.h */,
+				180571EA2C269199007659DB /* JRSwizzle.m */,
+			);
+			path = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		180571F22C269199007659DB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				180571EC2C269199007659DB /* NSObject+ZXHandleLoad.h */,
+				180571ED2C269199007659DB /* NSObject+ZXHandleLoad.m */,
+				180571EE2C269199007659DB /* NSString+ZXHookRegular.h */,
+				180571EF2C269199007659DB /* NSString+ZXHookRegular.m */,
+				180571F02C269199007659DB /* UIViewController+ZXHandleLoad.h */,
+				180571F12C269199007659DB /* UIViewController+ZXHandleLoad.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		180571F52C269199007659DB /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				180571F32C269199007659DB /* Base64.h */,
+				180571F42C269199007659DB /* Base64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		180571F82C269199007659DB /* CocoaSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				180571F52C269199007659DB /* Base64 */,
+				180571F62C269199007659DB /* CocoaSecurity.h */,
+				180571F72C269199007659DB /* CocoaSecurity.m */,
+			);
+			path = CocoaSecurity;
+			sourceTree = "<group>";
+		};
+		180571FB2C269199007659DB /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				180571F82C269199007659DB /* CocoaSecurity */,
+				180571F92C269199007659DB /* ZXEncryption.h */,
+				180571FA2C269199007659DB /* ZXEncryption.m */,
+			);
+			path = Encryption;
+			sourceTree = "<group>";
+		};
+		180571FE2C269199007659DB /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				180571FC2C269199007659DB /* ZXHttpRequest.h */,
+				180571FD2C269199007659DB /* ZXHttpRequest.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		180572092C269199007659DB /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				180571FF2C269199007659DB /* ANYMethodLog.h */,
+				180572002C269199007659DB /* ANYMethodLog.m */,
+				180572012C269199007659DB /* NSObject+ZXHookClassUtil.h */,
+				180572022C269199007659DB /* NSObject+ZXHookClassUtil.m */,
+				180572032C269199007659DB /* ZXHookClass.h */,
+				180572042C269199007659DB /* ZXHookClass.m */,
+				180572052C269199007659DB /* ZXHookClassMethod.h */,
+				180572062C269199007659DB /* ZXHookClassMethod.m */,
+				180572072C269199007659DB /* ZXHookClassPro.h */,
+				180572082C269199007659DB /* ZXHookClassPro.m */,
+			);
+			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		1805720C2C269199007659DB /* MethodLog */ = {
+			isa = PBXGroup;
+			children = (
+				180572092C269199007659DB /* BaseClass */,
+				1805720A2C269199007659DB /* ZXMethodLog.h */,
+				1805720B2C269199007659DB /* ZXMethodLog.m */,
+			);
+			path = MethodLog;
+			sourceTree = "<group>";
+		};
+		180572152C269199007659DB /* ZXBlockLog */ = {
+			isa = PBXGroup;
+			children = (
+				1805720D2C269199007659DB /* CTBlockDescription.h */,
+				1805720E2C269199007659DB /* CTBlockDescription.m */,
+				1805720F2C269199007659DB /* ZXBlockLog.h */,
+				180572102C269199007659DB /* ZXBlockLog.m */,
+				180572112C269199007659DB /* ZXBlockLogResult.h */,
+				180572122C269199007659DB /* ZXBlockLogResult.m */,
+				180572132C269199007659DB /* ZXBlockLogTool.h */,
+				180572142C269199007659DB /* ZXBlockLogTool.m */,
+			);
+			path = ZXBlockLog;
+			sourceTree = "<group>";
+		};
+		1805722A2C269199007659DB /* BaseTool */ = {
+			isa = PBXGroup;
+			children = (
+				180572162C269199007659DB /* NSDictionary+ZXSafetySet.h */,
+				180572172C269199007659DB /* NSDictionary+ZXSafetySet.m */,
+				180572182C269199007659DB /* NSMutableArray+ZXSafetySet.h */,
+				180572192C269199007659DB /* NSMutableArray+ZXSafetySet.m */,
+				1805721A2C269199007659DB /* NSObject+ZXDataConvertRule.h */,
+				1805721B2C269199007659DB /* NSObject+ZXDataConvertRule.m */,
+				1805721C2C269199007659DB /* NSObject+ZXGetProperty.h */,
+				1805721D2C269199007659DB /* NSObject+ZXGetProperty.m */,
+				1805721E2C269199007659DB /* NSObject+ZXSafetySet.h */,
+				1805721F2C269199007659DB /* NSObject+ZXSafetySet.m */,
+				180572202C269199007659DB /* NSString+ZXDataConvert.h */,
+				180572212C269199007659DB /* NSString+ZXDataConvert.m */,
+				180572222C269199007659DB /* NSString+ZXRegular.h */,
+				180572232C269199007659DB /* NSString+ZXRegular.m */,
+				180572242C269199007659DB /* ZXClassPrint.h */,
+				180572252C269199007659DB /* ZXClassPrint.m */,
+				180572262C269199007659DB /* ZXDataType.h */,
+				180572272C269199007659DB /* ZXDataType.m */,
+				180572282C269199007659DB /* ZXDecimalNumberTool.h */,
+				180572292C269199007659DB /* ZXDecimalNumberTool.m */,
+			);
+			path = BaseTool;
+			sourceTree = "<group>";
+		};
+		1805723B2C269199007659DB /* ZXDataConvert */ = {
+			isa = PBXGroup;
+			children = (
+				1805722A2C269199007659DB /* BaseTool */,
+				1805722B2C269199007659DB /* NSArray+ZXDataConvert.h */,
+				1805722C2C269199007659DB /* NSArray+ZXDataConvert.m */,
+				1805722D2C269199007659DB /* NSData+ZXDataConvert.h */,
+				1805722E2C269199007659DB /* NSData+ZXDataConvert.m */,
+				1805722F2C269199007659DB /* NSDictionary+ZXDataConvert.h */,
+				180572302C269199007659DB /* NSDictionary+ZXDataConvert.m */,
+				180572312C269199007659DB /* NSObject+ZXToDic.h */,
+				180572322C269199007659DB /* NSObject+ZXToDic.m */,
+				180572332C269199007659DB /* NSObject+ZXToJson.h */,
+				180572342C269199007659DB /* NSObject+ZXToJson.m */,
+				180572352C269199007659DB /* NSObject+ZXToModel.h */,
+				180572362C269199007659DB /* NSObject+ZXToModel.m */,
+				180572372C269199007659DB /* ZXDataConvert.h */,
+				180572382C269199007659DB /* ZXDataConvert.m */,
+				180572392C269199007659DB /* ZXDataConvertConfig.h */,
+				1805723A2C269199007659DB /* ZXDataConvertConfig.m */,
+			);
+			path = ZXDataConvert;
+			sourceTree = "<group>";
+		};
+		180572462C269199007659DB /* ZXDataStore */ = {
+			isa = PBXGroup;
+			children = (
+				1805723C2C269199007659DB /* NSObject+ZXSQliteHandle.h */,
+				1805723D2C269199007659DB /* NSObject+ZXSQliteHandle.m */,
+				1805723E2C269199007659DB /* SqlResult.h */,
+				1805723F2C269199007659DB /* SqlResult.m */,
+				180572402C269199007659DB /* ZXClassArchived.h */,
+				180572412C269199007659DB /* ZXClassArchived.m */,
+				180572422C269199007659DB /* ZXDataStoreCache.h */,
+				180572432C269199007659DB /* ZXDataStoreCache.m */,
+				180572442C269199007659DB /* ZXDataStoreSQlite.h */,
+				180572452C269199007659DB /* ZXDataStoreSQlite.m */,
+			);
+			path = ZXDataStore;
+			sourceTree = "<group>";
+		};
+		1805724B2C269199007659DB /* ZXDataHandle */ = {
+			isa = PBXGroup;
+			children = (
+				1805723B2C269199007659DB /* ZXDataConvert */,
+				180572462C269199007659DB /* ZXDataStore */,
+				180572472C269199007659DB /* USAGE.md */,
+				180572482C269199007659DB /* ZXDataHandle.h */,
+				180572492C269199007659DB /* ZXDataHandleHeaders.h */,
+				1805724A2C269199007659DB /* ZXDataHandleLog.h */,
+			);
+			path = ZXDataHandle;
+			sourceTree = "<group>";
+		};
+		1805724E2C269199007659DB /* ZXPoll */ = {
+			isa = PBXGroup;
+			children = (
+				1805724C2C269199007659DB /* ZXPoll.h */,
+				1805724D2C269199007659DB /* ZXPoll.m */,
+			);
+			path = ZXPoll;
+			sourceTree = "<group>";
+		};
+		180572572C269199007659DB /* ZXRequestBlock */ = {
+			isa = PBXGroup;
+			children = (
+				1805724F2C269199007659DB /* NSURLSession+ZXHttpProxy.h */,
+				180572502C269199007659DB /* NSURLSession+ZXHttpProxy.m */,
+				180572512C269199007659DB /* ZXHttpIPGet.h */,
+				180572522C269199007659DB /* ZXHttpIPGet.m */,
+				180572532C269199007659DB /* ZXRequestBlock.h */,
+				180572542C269199007659DB /* ZXRequestBlock.m */,
+				180572552C269199007659DB /* ZXURLProtocol.h */,
+				180572562C269199007659DB /* ZXURLProtocol.m */,
+			);
+			path = ZXRequestBlock;
+			sourceTree = "<group>";
+		};
+		180572582C269199007659DB /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				180571FB2C269199007659DB /* Encryption */,
+				180571FE2C269199007659DB /* HttpRequest */,
+				1805720C2C269199007659DB /* MethodLog */,
+				180572152C269199007659DB /* ZXBlockLog */,
+				1805724B2C269199007659DB /* ZXDataHandle */,
+				1805724E2C269199007659DB /* ZXPoll */,
+				180572572C269199007659DB /* ZXRequestBlock */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		1805725B2C269199007659DB /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				180572592C269199007659DB /* ZXImagePicker.h */,
+				1805725A2C269199007659DB /* ZXImagePicker.m */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		180572622C269199007659DB /* ShadowView */ = {
+			isa = PBXGroup;
+			children = (
+				1805725C2C269199007659DB /* UIView+ZXFrame.h */,
+				1805725D2C269199007659DB /* UIView+ZXFrame.m */,
+				1805725E2C269199007659DB /* ZXShadowView.h */,
+				1805725F2C269199007659DB /* ZXShadowView.m */,
+				180572602C269199007659DB /* ZXShowImgView.h */,
+				180572612C269199007659DB /* ZXShowImgView.m */,
+			);
+			path = ShadowView;
+			sourceTree = "<group>";
+		};
+		180572652C269199007659DB /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				180572632C269199007659DB /* UIView+Toast.h */,
+				180572642C269199007659DB /* UIView+Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		180572682C269199007659DB /* UIAlert */ = {
+			isa = PBXGroup;
+			children = (
+				180572662C269199007659DB /* UIViewController+ZXAlert.h */,
+				180572672C269199007659DB /* UIViewController+ZXAlert.m */,
+			);
+			path = UIAlert;
+			sourceTree = "<group>";
+		};
+		1805726D2C269199007659DB /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				180572692C269199007659DB /* UIButton+ZXAddAction.h */,
+				1805726A2C269199007659DB /* UIButton+ZXAddAction.m */,
+				1805726B2C269199007659DB /* UIButton+ZXHookAction.h */,
+				1805726C2C269199007659DB /* UIButton+ZXHookAction.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		180572722C269199007659DB /* UIGet */ = {
+			isa = PBXGroup;
+			children = (
+				1805726E2C269199007659DB /* UIView+ZXHookUIGet.h */,
+				1805726F2C269199007659DB /* UIView+ZXHookUIGet.m */,
+				180572702C269199007659DB /* ZXHookUIGet.h */,
+				180572712C269199007659DB /* ZXHookUIGet.m */,
+			);
+			path = UIGet;
+			sourceTree = "<group>";
+		};
+		180572732C269199007659DB /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1805725B2C269199007659DB /* ImagePicker */,
+				180572622C269199007659DB /* ShadowView */,
+				180572652C269199007659DB /* Toast */,
+				180572682C269199007659DB /* UIAlert */,
+				1805726D2C269199007659DB /* UIButton */,
+				180572722C269199007659DB /* UIGet */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		180572782C269199007659DB /* ZXHookUtil */ = {
+			isa = PBXGroup;
+			children = (
+				180571F22C269199007659DB /* Category */,
+				180572582C269199007659DB /* Foundation */,
+				180572732C269199007659DB /* UIKit */,
+				180572742C269199007659DB /* ZXCodeFloor.h */,
+				180572752C269199007659DB /* ZXCodeFloor.m */,
+				180572762C269199007659DB /* ZXHookUtil.h */,
+				180572772C269199007659DB /* ZXHookUtil.m */,
+			);
+			path = ZXHookUtil;
+			sourceTree = "<group>";
+		};
+		180573732C2691F8007659DB /* BundleID */ = {
+			isa = PBXGroup;
+			children = (
+				180573712C2691F8007659DB /* BundleReplace.h */,
+				180573722C2691F8007659DB /* BundleReplace.m */,
+			);
+			path = BundleID;
+			sourceTree = "<group>";
+		};
+		180573782C2691F8007659DB /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				180573742C2691F8007659DB /* CustomURLProtocol.h */,
+				180573752C2691F8007659DB /* CustomURLProtocol.m */,
+				180573762C2691F8007659DB /* HookURLProtocol.h */,
+				180573772C2691F8007659DB /* HookURLProtocol.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		1805737B2C2691F8007659DB /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				180573792C2691F8007659DB /* PermissionCheck.h */,
+				1805737A2C2691F8007659DB /* PermissionCheck.m */,
+			);
+			path = Permission;
+			sourceTree = "<group>";
+		};
+		1805737E2C2691F8007659DB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1805737C2C2691F8007659DB /* UIViewController+Screen.h */,
+				1805737D2C2691F8007659DB /* UIViewController+Screen.m */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		1805737F2C2691F8007659DB /* Hookes */ = {
+			isa = PBXGroup;
+			children = (
+				180573732C2691F8007659DB /* BundleID */,
+				180573782C2691F8007659DB /* Http */,
+				1805737B2C2691F8007659DB /* Permission */,
+				1805737E2C2691F8007659DB /* Screen */,
+			);
+			path = Hookes;
+			sourceTree = "<group>";
+		};
+		1805739A2C269218007659DB /* Bypass */ = {
+			isa = PBXGroup;
+			children = (
+				C63AC1A81E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h */,
+				C63AC1A91E8392210094B1C5 /* IPAPatchBypassAntiDebugging.m */,
+				180573942C269210007659DB /* PatchSVC.h */,
+				180573952C269210007659DB /* PatchSVC.c */,
+			);
+			path = Bypass;
+			sourceTree = "<group>";
+		};
+		C63AC1A01E838B8E0094B1C5 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				180571E82C269199007659DB /* CaptainHook */,
+				180571EB2C269199007659DB /* JRSwizzle */,
+				180572782C269199007659DB /* ZXHookUtil */,
+				C63AC1A11E838BB70094B1C5 /* fishhook */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		C63AC1A11E838BB70094B1C5 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				C63AC1A31E838BB70094B1C5 /* fishhook.h */,
+				C63AC1A21E838BB70094B1C5 /* fishhook.c */,
+				C63AC1A41E838BB70094B1C5 /* LICENSE */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		C698B9F52986148600BB5DC9 /* IPAPatch-MacDummyApp */ = {
+			isa = PBXGroup;
+			children = (
+				C698B9F62986148600BB5DC9 /* AppDelegate.h */,
+				C698B9F72986148600BB5DC9 /* AppDelegate.m */,
+				C698BA012986148700BB5DC9 /* main.m */,
+			);
+			path = "IPAPatch-MacDummyApp";
+			sourceTree = "<group>";
+		};
+		C698BA1129861E8B00BB5DC9 /* IPAPatchFrameworkMac */ = {
+			isa = PBXGroup;
+			children = (
+				C698BA1229861E8C00BB5DC9 /* IPAPatchFrameworkMac.h */,
+			);
+			path = IPAPatchFrameworkMac;
+			sourceTree = "<group>";
+		};
+		C6B262FD1E7BC97B009B4DEA = {
+			isa = PBXGroup;
+			children = (
+				C6B263091E7BC97B009B4DEA /* IPAPatch */,
+				C6B263291E7BCA86009B4DEA /* Tools */,
+				C6B2634A1E7BCB31009B4DEA /* IPAPatch-DummyApp */,
+				C698B9F52986148600BB5DC9 /* IPAPatch-MacDummyApp */,
+				C698BA1129861E8B00BB5DC9 /* IPAPatchFrameworkMac */,
+				C6B263081E7BC97B009B4DEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6B263081E7BC97B009B4DEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6B263071E7BC97B009B4DEA /* IPAPatchFramework.framework */,
+				C6B263491E7BCB31009B4DEA /* IPAPatch-DummyApp.app */,
+				C698B9F42986148600BB5DC9 /* IPAPatch-MacDummyApp.app */,
+				C698BA1029861E8B00BB5DC9 /* IPAPatchFrameworkMac.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6B263091E7BC97B009B4DEA /* IPAPatch */ = {
+			isa = PBXGroup;
+			children = (
+				1805739A2C269218007659DB /* Bypass */,
+				C63AC1A01E838B8E0094B1C5 /* Vendors */,
+				1805737F2C2691F8007659DB /* Hookes */,
+				1805736B2C2691A6007659DB /* HookTools.h */,
+				1805736C2C2691A6007659DB /* HookTools.m */,
+				C6B263251E7BC9DF009B4DEA /* IPAPatchEntry.h */,
+				C6B263261E7BC9DF009B4DEA /* IPAPatchEntry.m */,
+				C6B2630B1E7BC97B009B4DEA /* Info.plist */,
+			);
+			path = IPAPatch;
+			sourceTree = "<group>";
+		};
+		C6B263291E7BCA86009B4DEA /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C6B263621E7BCD03009B4DEA /* patch.sh */,
+				C6DDBB621F5146AD00A42BE2 /* create_ipa.sh */,
+				C6A353E11F51367500A9E30D /* options.plist */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C6B2634A1E7BCB31009B4DEA /* IPAPatch-DummyApp */ = {
+			isa = PBXGroup;
+			children = (
+				C6B2634E1E7BCB31009B4DEA /* AppDelegate.h */,
+				C6B2634F1E7BCB31009B4DEA /* AppDelegate.m */,
+				C64288381E7BF9E900C0BBB0 /* ProjectConfigurationWarning.hpp */,
+				C64288371E7BF9E900C0BBB0 /* ProjectConfigurationWarning.cpp */,
+				C6B2635C1E7BCB31009B4DEA /* Info.plist */,
+				C6B2634B1E7BCB31009B4DEA /* Supporting Files */,
+			);
+			path = "IPAPatch-DummyApp";
+			sourceTree = "<group>";
+		};
+		C6B2634B1E7BCB31009B4DEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6B2634C1E7BCB31009B4DEA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C698BA0B29861E8B00BB5DC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1805732D2C269199007659DB /* UIButton+ZXHookAction.h in Headers */,
+				1805732E2C269199007659DB /* ZXBlockLogResult.h in Headers */,
+				1805732F2C269199007659DB /* ZXHookUtil.h in Headers */,
+				180573702C2691A6007659DB /* HookTools.h in Headers */,
+				180573302C269199007659DB /* ZXDataStoreCache.h in Headers */,
+				180573312C269199007659DB /* NSObject+ZXToJson.h in Headers */,
+				180573322C269199007659DB /* NSMutableArray+ZXSafetySet.h in Headers */,
+				180573332C269199007659DB /* NSString+ZXHookRegular.h in Headers */,
+				180573342C269199007659DB /* ZXDataConvert.h in Headers */,
+				180573352C269199007659DB /* ZXShadowView.h in Headers */,
+				180573362C269199007659DB /* ZXURLProtocol.h in Headers */,
+				180573372C269199007659DB /* ZXCodeFloor.h in Headers */,
+				180573382C269199007659DB /* UUCaptainHook.h in Headers */,
+				180573392C269199007659DB /* UIView+ZXFrame.h in Headers */,
+				1805733A2C269199007659DB /* NSObject+ZXToModel.h in Headers */,
+				1805733B2C269199007659DB /* NSObject+ZXSafetySet.h in Headers */,
+				1805733C2C269199007659DB /* ZXDataConvertConfig.h in Headers */,
+				1805733D2C269199007659DB /* ZXBlockLogTool.h in Headers */,
+				1805733E2C269199007659DB /* ZXDecimalNumberTool.h in Headers */,
+				1805733F2C269199007659DB /* ZXHookClass.h in Headers */,
+				180573402C269199007659DB /* ZXEncryption.h in Headers */,
+				180573412C269199007659DB /* ANYMethodLog.h in Headers */,
+				180573422C269199007659DB /* ZXDataHandleLog.h in Headers */,
+				180573432C269199007659DB /* NSObject+ZXHookClassUtil.h in Headers */,
+				180573442C269199007659DB /* UIView+Toast.h in Headers */,
+				180573452C269199007659DB /* ZXMethodLog.h in Headers */,
+				180573462C269199007659DB /* NSObject+ZXToDic.h in Headers */,
+				180573472C269199007659DB /* UIButton+ZXAddAction.h in Headers */,
+				180573482C269199007659DB /* ZXImagePicker.h in Headers */,
+				180573492C269199007659DB /* NSObject+ZXSQliteHandle.h in Headers */,
+				1805734A2C269199007659DB /* SqlResult.h in Headers */,
+				1805734B2C269199007659DB /* ZXDataHandle.h in Headers */,
+				1805734C2C269199007659DB /* NSString+ZXDataConvert.h in Headers */,
+				1805734D2C269199007659DB /* CocoaSecurity.h in Headers */,
+				1805738F2C2691F8007659DB /* HookURLProtocol.h in Headers */,
+				180573902C2691F8007659DB /* BundleReplace.h in Headers */,
+				180573912C2691F8007659DB /* CustomURLProtocol.h in Headers */,
+				180573922C2691F8007659DB /* UIViewController+Screen.h in Headers */,
+				180573932C2691F8007659DB /* PermissionCheck.h in Headers */,
+				1805734E2C269199007659DB /* NSDictionary+ZXSafetySet.h in Headers */,
+				1805734F2C269199007659DB /* ZXClassArchived.h in Headers */,
+				180573502C269199007659DB /* ZXDataHandleHeaders.h in Headers */,
+				180573512C269199007659DB /* ZXRequestBlock.h in Headers */,
+				180573522C269199007659DB /* NSData+ZXDataConvert.h in Headers */,
+				180573532C269199007659DB /* ZXDataStoreSQlite.h in Headers */,
+				180573542C269199007659DB /* UIViewController+ZXHandleLoad.h in Headers */,
+				180573552C269199007659DB /* ZXHookUIGet.h in Headers */,
+				180573562C269199007659DB /* Base64.h in Headers */,
+				180573572C269199007659DB /* ZXPoll.h in Headers */,
+				180573582C269199007659DB /* NSURLSession+ZXHttpProxy.h in Headers */,
+				180573592C269199007659DB /* NSObject+ZXHandleLoad.h in Headers */,
+				1805735A2C269199007659DB /* ZXHookClassMethod.h in Headers */,
+				1805735B2C269199007659DB /* CTBlockDescription.h in Headers */,
+				1805735C2C269199007659DB /* NSDictionary+ZXDataConvert.h in Headers */,
+				1805735D2C269199007659DB /* ZXHttpRequest.h in Headers */,
+				1805735E2C269199007659DB /* NSArray+ZXDataConvert.h in Headers */,
+				1805735F2C269199007659DB /* UIViewController+ZXAlert.h in Headers */,
+				180573602C269199007659DB /* UIView+ZXHookUIGet.h in Headers */,
+				180573992C269210007659DB /* PatchSVC.h in Headers */,
+				180573612C269199007659DB /* ZXClassPrint.h in Headers */,
+				180573622C269199007659DB /* JRSwizzle.h in Headers */,
+				180573632C269199007659DB /* NSObject+ZXGetProperty.h in Headers */,
+				180573642C269199007659DB /* ZXHookClassPro.h in Headers */,
+				180573652C269199007659DB /* ZXShowImgView.h in Headers */,
+				180573662C269199007659DB /* NSObject+ZXDataConvertRule.h in Headers */,
+				180573672C269199007659DB /* NSString+ZXRegular.h in Headers */,
+				180573682C269199007659DB /* ZXHttpIPGet.h in Headers */,
+				180573692C269199007659DB /* ZXBlockLog.h in Headers */,
+				1805736A2C269199007659DB /* ZXDataType.h in Headers */,
+				C698BA1329861E8C00BB5DC9 /* IPAPatchFrameworkMac.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B263041E7BC97B009B4DEA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6B263271E7BC9DF009B4DEA /* IPAPatchEntry.h in Headers */,
+				C63AC1A61E838BB70094B1C5 /* fishhook.h in Headers */,
+				180572792C269199007659DB /* UIButton+ZXHookAction.h in Headers */,
+				1805727A2C269199007659DB /* ZXBlockLogResult.h in Headers */,
+				180573962C269210007659DB /* PatchSVC.h in Headers */,
+				1805727B2C269199007659DB /* ZXHookUtil.h in Headers */,
+				1805727C2C269199007659DB /* ZXDataStoreCache.h in Headers */,
+				1805727D2C269199007659DB /* NSObject+ZXToJson.h in Headers */,
+				1805727E2C269199007659DB /* NSMutableArray+ZXSafetySet.h in Headers */,
+				1805727F2C269199007659DB /* NSString+ZXHookRegular.h in Headers */,
+				180572802C269199007659DB /* ZXDataConvert.h in Headers */,
+				180572812C269199007659DB /* ZXShadowView.h in Headers */,
+				180572822C269199007659DB /* ZXURLProtocol.h in Headers */,
+				180572832C269199007659DB /* ZXCodeFloor.h in Headers */,
+				180572842C269199007659DB /* UUCaptainHook.h in Headers */,
+				180572852C269199007659DB /* UIView+ZXFrame.h in Headers */,
+				180572862C269199007659DB /* NSObject+ZXToModel.h in Headers */,
+				180572872C269199007659DB /* NSObject+ZXSafetySet.h in Headers */,
+				180572882C269199007659DB /* ZXDataConvertConfig.h in Headers */,
+				180572892C269199007659DB /* ZXBlockLogTool.h in Headers */,
+				1805728A2C269199007659DB /* ZXDecimalNumberTool.h in Headers */,
+				1805728B2C269199007659DB /* ZXHookClass.h in Headers */,
+				1805728C2C269199007659DB /* ZXEncryption.h in Headers */,
+				1805728D2C269199007659DB /* ANYMethodLog.h in Headers */,
+				1805728E2C269199007659DB /* ZXDataHandleLog.h in Headers */,
+				1805728F2C269199007659DB /* NSObject+ZXHookClassUtil.h in Headers */,
+				180572902C269199007659DB /* UIView+Toast.h in Headers */,
+				180572912C269199007659DB /* ZXMethodLog.h in Headers */,
+				180572922C269199007659DB /* NSObject+ZXToDic.h in Headers */,
+				180572932C269199007659DB /* UIButton+ZXAddAction.h in Headers */,
+				180572942C269199007659DB /* ZXImagePicker.h in Headers */,
+				180572952C269199007659DB /* NSObject+ZXSQliteHandle.h in Headers */,
+				180572962C269199007659DB /* SqlResult.h in Headers */,
+				180572972C269199007659DB /* ZXDataHandle.h in Headers */,
+				180572982C269199007659DB /* NSString+ZXDataConvert.h in Headers */,
+				180572992C269199007659DB /* CocoaSecurity.h in Headers */,
+				1805729A2C269199007659DB /* NSDictionary+ZXSafetySet.h in Headers */,
+				1805729B2C269199007659DB /* ZXClassArchived.h in Headers */,
+				1805729C2C269199007659DB /* ZXDataHandleHeaders.h in Headers */,
+				1805729D2C269199007659DB /* ZXRequestBlock.h in Headers */,
+				1805729E2C269199007659DB /* NSData+ZXDataConvert.h in Headers */,
+				1805729F2C269199007659DB /* ZXDataStoreSQlite.h in Headers */,
+				180572A02C269199007659DB /* UIViewController+ZXHandleLoad.h in Headers */,
+				180572A12C269199007659DB /* ZXHookUIGet.h in Headers */,
+				1805736D2C2691A6007659DB /* HookTools.h in Headers */,
+				180572A22C269199007659DB /* Base64.h in Headers */,
+				180572A32C269199007659DB /* ZXPoll.h in Headers */,
+				180572A42C269199007659DB /* NSURLSession+ZXHttpProxy.h in Headers */,
+				180572A52C269199007659DB /* NSObject+ZXHandleLoad.h in Headers */,
+				180573802C2691F8007659DB /* HookURLProtocol.h in Headers */,
+				180573812C2691F8007659DB /* BundleReplace.h in Headers */,
+				180573822C2691F8007659DB /* CustomURLProtocol.h in Headers */,
+				180573832C2691F8007659DB /* UIViewController+Screen.h in Headers */,
+				180573842C2691F8007659DB /* PermissionCheck.h in Headers */,
+				180572A62C269199007659DB /* ZXHookClassMethod.h in Headers */,
+				180572A72C269199007659DB /* CTBlockDescription.h in Headers */,
+				180572A82C269199007659DB /* NSDictionary+ZXDataConvert.h in Headers */,
+				180572A92C269199007659DB /* ZXHttpRequest.h in Headers */,
+				180572AA2C269199007659DB /* NSArray+ZXDataConvert.h in Headers */,
+				180572AB2C269199007659DB /* UIViewController+ZXAlert.h in Headers */,
+				180572AC2C269199007659DB /* UIView+ZXHookUIGet.h in Headers */,
+				180572AD2C269199007659DB /* ZXClassPrint.h in Headers */,
+				180572AE2C269199007659DB /* JRSwizzle.h in Headers */,
+				180572AF2C269199007659DB /* NSObject+ZXGetProperty.h in Headers */,
+				180572B02C269199007659DB /* ZXHookClassPro.h in Headers */,
+				180572B12C269199007659DB /* ZXShowImgView.h in Headers */,
+				180572B22C269199007659DB /* NSObject+ZXDataConvertRule.h in Headers */,
+				180572B32C269199007659DB /* NSString+ZXRegular.h in Headers */,
+				180572B42C269199007659DB /* ZXHttpIPGet.h in Headers */,
+				180572B52C269199007659DB /* ZXBlockLog.h in Headers */,
+				180572B62C269199007659DB /* ZXDataType.h in Headers */,
+				C63AC1AA1E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C698B9F32986148600BB5DC9 /* IPAPatch-MacDummyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C698BA062986148700BB5DC9 /* Build configuration list for PBXNativeTarget "IPAPatch-MacDummyApp" */;
+			buildPhases = (
+				C698B9F02986148600BB5DC9 /* Sources */,
+				C698B9F12986148600BB5DC9 /* Frameworks */,
+				C698B9F22986148600BB5DC9 /* Resources */,
+				C698BA09298614FC00BB5DC9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C698BA1529861E8C00BB5DC9 /* PBXTargetDependency */,
+			);
+			name = "IPAPatch-MacDummyApp";
+			productName = "IPAPatch-MacDummyApp";
+			productReference = C698B9F42986148600BB5DC9 /* IPAPatch-MacDummyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C698BA0F29861E8B00BB5DC9 /* IPAPatchFrameworkMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C698BA1829861E8C00BB5DC9 /* Build configuration list for PBXNativeTarget "IPAPatchFrameworkMac" */;
+			buildPhases = (
+				C698BA0B29861E8B00BB5DC9 /* Headers */,
+				C698BA0C29861E8B00BB5DC9 /* Sources */,
+				C698BA0D29861E8B00BB5DC9 /* Frameworks */,
+				C698BA0E29861E8B00BB5DC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPAPatchFrameworkMac;
+			productName = IPAPatchFrameworkMac;
+			productReference = C698BA1029861E8B00BB5DC9 /* IPAPatchFrameworkMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6B263061E7BC97B009B4DEA /* IPAPatchFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6B2631B1E7BC97B009B4DEA /* Build configuration list for PBXNativeTarget "IPAPatchFramework" */;
+			buildPhases = (
+				C6B263021E7BC97B009B4DEA /* Sources */,
+				C6B263031E7BC97B009B4DEA /* Frameworks */,
+				C6B263041E7BC97B009B4DEA /* Headers */,
+				C6B263051E7BC97B009B4DEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPAPatchFramework;
+			productName = IPAPatch;
+			productReference = C6B263071E7BC97B009B4DEA /* IPAPatchFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6B263481E7BCB31009B4DEA /* IPAPatch-DummyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6B2635D1E7BCB31009B4DEA /* Build configuration list for PBXNativeTarget "IPAPatch-DummyApp" */;
+			buildPhases = (
+				C6B263451E7BCB31009B4DEA /* Sources */,
+				C6B263461E7BCB31009B4DEA /* Frameworks */,
+				C6B263471E7BCB31009B4DEA /* Resources */,
+				C6B263631E7BD0B4009B4DEA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6B263611E7BCC65009B4DEA /* PBXTargetDependency */,
+			);
+			name = "IPAPatch-DummyApp";
+			productName = "IPAPatch-DummyApp";
+			productReference = C6B263491E7BCB31009B4DEA /* IPAPatch-DummyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6B262FE1E7BC97B009B4DEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Weibo;
+				TargetAttributes = {
+					C698B9F32986148600BB5DC9 = {
+						CreatedOnToolsVersion = 14.1;
+						ProvisioningStyle = Automatic;
+					};
+					C698BA0F29861E8B00BB5DC9 = {
+						CreatedOnToolsVersion = 14.1;
+						ProvisioningStyle = Automatic;
+					};
+					C6B263061E7BC97B009B4DEA = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = CPL4GGWSTS;
+						ProvisioningStyle = Automatic;
+					};
+					C6B263481E7BCB31009B4DEA = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = CPL4GGWSTS;
+						ProvisioningStyle = Automatic;
+					};
+					C6DDBB5C1F51468D00A42BE2 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = DMJXDB9H6Q;
+					};
+				};
+			};
+			buildConfigurationList = C6B263011E7BC97B009B4DEA /* Build configuration list for PBXProject "IPAPatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = C6B262FD1E7BC97B009B4DEA;
+			productRefGroup = C6B263081E7BC97B009B4DEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6B263481E7BCB31009B4DEA /* IPAPatch-DummyApp */,
+				C6B263061E7BC97B009B4DEA /* IPAPatchFramework */,
+				C6DDBB5C1F51468D00A42BE2 /* IPAPatch */,
+				C698B9F32986148600BB5DC9 /* IPAPatch-MacDummyApp */,
+				C698BA0F29861E8B00BB5DC9 /* IPAPatchFrameworkMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C698B9F22986148600BB5DC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C698BA0E29861E8B00BB5DC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180572F22C269199007659DB /* USAGE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B263051E7BC97B009B4DEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180572F12C269199007659DB /* USAGE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B263471E7BCB31009B4DEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A353E21F51367500A9E30D /* options.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C698BA09298614FC00BB5DC9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Tools/patch.sh\" Mac\n";
+		};
+		C6B263631E7BD0B4009B4DEA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Tools/patch.sh\" iOS\n";
+		};
+		C6DDBB631F5147BA00A42BE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Tools/create_ipa.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C698B9F02986148600BB5DC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C698BA022986148700BB5DC9 /* main.m in Sources */,
+				C698BA0A29861BA800BB5DC9 /* ProjectConfigurationWarning.cpp in Sources */,
+				C698B9F82986148600BB5DC9 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C698BA0C29861E8B00BB5DC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1805738A2C2691F8007659DB /* UIViewController+Screen.m in Sources */,
+				1805738B2C2691F8007659DB /* HookURLProtocol.m in Sources */,
+				1805738C2C2691F8007659DB /* PermissionCheck.m in Sources */,
+				1805738D2C2691F8007659DB /* CustomURLProtocol.m in Sources */,
+				1805738E2C2691F8007659DB /* BundleReplace.m in Sources */,
+				180572F32C269199007659DB /* ZXImagePicker.m in Sources */,
+				180572F42C269199007659DB /* NSObject+ZXSQliteHandle.m in Sources */,
+				180572F52C269199007659DB /* SqlResult.m in Sources */,
+				180572F62C269199007659DB /* Base64.m in Sources */,
+				180572F72C269199007659DB /* ZXClassPrint.m in Sources */,
+				180572F82C269199007659DB /* ZXHookUtil.m in Sources */,
+				180572F92C269199007659DB /* UIView+Toast.m in Sources */,
+				180572FA2C269199007659DB /* ZXDataConvert.m in Sources */,
+				180572FB2C269199007659DB /* NSObject+ZXSafetySet.m in Sources */,
+				180572FC2C269199007659DB /* UIButton+ZXAddAction.m in Sources */,
+				180572FD2C269199007659DB /* ZXHttpRequest.m in Sources */,
+				180572FE2C269199007659DB /* ZXHookClassPro.m in Sources */,
+				180572FF2C269199007659DB /* NSString+ZXRegular.m in Sources */,
+				180573002C269199007659DB /* ZXHookClassMethod.m in Sources */,
+				1805736F2C2691A6007659DB /* HookTools.m in Sources */,
+				180573012C269199007659DB /* ZXBlockLog.m in Sources */,
+				180573022C269199007659DB /* ZXMethodLog.m in Sources */,
+				180573032C269199007659DB /* ZXEncryption.m in Sources */,
+				180573042C269199007659DB /* ZXPoll.m in Sources */,
+				180573052C269199007659DB /* CocoaSecurity.m in Sources */,
+				180573062C269199007659DB /* ZXClassArchived.m in Sources */,
+				180573072C269199007659DB /* NSString+ZXDataConvert.m in Sources */,
+				180573082C269199007659DB /* UIViewController+ZXHandleLoad.m in Sources */,
+				180573092C269199007659DB /* ZXShadowView.m in Sources */,
+				1805730A2C269199007659DB /* NSMutableArray+ZXSafetySet.m in Sources */,
+				1805730B2C269199007659DB /* NSObject+ZXGetProperty.m in Sources */,
+				1805730C2C269199007659DB /* ZXDataType.m in Sources */,
+				1805730D2C269199007659DB /* NSObject+ZXHookClassUtil.m in Sources */,
+				1805730E2C269199007659DB /* NSDictionary+ZXSafetySet.m in Sources */,
+				1805730F2C269199007659DB /* ZXShowImgView.m in Sources */,
+				180573102C269199007659DB /* UIView+ZXHookUIGet.m in Sources */,
+				180573112C269199007659DB /* UIViewController+ZXAlert.m in Sources */,
+				180573122C269199007659DB /* ZXDataStoreSQlite.m in Sources */,
+				180573132C269199007659DB /* ZXBlockLogTool.m in Sources */,
+				180573142C269199007659DB /* ZXBlockLogResult.m in Sources */,
+				180573152C269199007659DB /* ZXRequestBlock.m in Sources */,
+				180573162C269199007659DB /* NSURLSession+ZXHttpProxy.m in Sources */,
+				180573172C269199007659DB /* ZXHookClass.m in Sources */,
+				180573182C269199007659DB /* NSData+ZXDataConvert.m in Sources */,
+				180573192C269199007659DB /* UIView+ZXFrame.m in Sources */,
+				1805731A2C269199007659DB /* NSArray+ZXDataConvert.m in Sources */,
+				1805731B2C269199007659DB /* NSObject+ZXToJson.m in Sources */,
+				180573982C269210007659DB /* PatchSVC.c in Sources */,
+				1805731C2C269199007659DB /* ZXDataConvertConfig.m in Sources */,
+				1805731D2C269199007659DB /* ZXURLProtocol.m in Sources */,
+				1805731E2C269199007659DB /* ZXHttpIPGet.m in Sources */,
+				1805731F2C269199007659DB /* NSObject+ZXHandleLoad.m in Sources */,
+				180573202C269199007659DB /* ZXCodeFloor.m in Sources */,
+				180573212C269199007659DB /* NSObject+ZXToModel.m in Sources */,
+				180573222C269199007659DB /* ZXHookUIGet.m in Sources */,
+				180573232C269199007659DB /* NSString+ZXHookRegular.m in Sources */,
+				180573242C269199007659DB /* ZXDataStoreCache.m in Sources */,
+				180573252C269199007659DB /* NSDictionary+ZXDataConvert.m in Sources */,
+				180573262C269199007659DB /* UIButton+ZXHookAction.m in Sources */,
+				180573272C269199007659DB /* NSObject+ZXToDic.m in Sources */,
+				180573282C269199007659DB /* CTBlockDescription.m in Sources */,
+				180573292C269199007659DB /* JRSwizzle.m in Sources */,
+				1805732A2C269199007659DB /* NSObject+ZXDataConvertRule.m in Sources */,
+				1805732B2C269199007659DB /* ANYMethodLog.m in Sources */,
+				1805732C2C269199007659DB /* ZXDecimalNumberTool.m in Sources */,
+				C698BA1D29861EDA00BB5DC9 /* IPAPatchBypassAntiDebugging.m in Sources */,
+				C698BA1E29861EDE00BB5DC9 /* fishhook.c in Sources */,
+				C698BA1C29861ED700BB5DC9 /* IPAPatchEntry.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B263021E7BC97B009B4DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180573852C2691F8007659DB /* UIViewController+Screen.m in Sources */,
+				180573862C2691F8007659DB /* HookURLProtocol.m in Sources */,
+				180573872C2691F8007659DB /* PermissionCheck.m in Sources */,
+				180573882C2691F8007659DB /* CustomURLProtocol.m in Sources */,
+				180573892C2691F8007659DB /* BundleReplace.m in Sources */,
+				180572B72C269199007659DB /* ZXImagePicker.m in Sources */,
+				180572B82C269199007659DB /* NSObject+ZXSQliteHandle.m in Sources */,
+				180572B92C269199007659DB /* SqlResult.m in Sources */,
+				180572BA2C269199007659DB /* Base64.m in Sources */,
+				180572BB2C269199007659DB /* ZXClassPrint.m in Sources */,
+				180572BC2C269199007659DB /* ZXHookUtil.m in Sources */,
+				180572BD2C269199007659DB /* UIView+Toast.m in Sources */,
+				180572BE2C269199007659DB /* ZXDataConvert.m in Sources */,
+				180572BF2C269199007659DB /* NSObject+ZXSafetySet.m in Sources */,
+				180572C02C269199007659DB /* UIButton+ZXAddAction.m in Sources */,
+				180572C12C269199007659DB /* ZXHttpRequest.m in Sources */,
+				180572C22C269199007659DB /* ZXHookClassPro.m in Sources */,
+				180572C32C269199007659DB /* NSString+ZXRegular.m in Sources */,
+				180572C42C269199007659DB /* ZXHookClassMethod.m in Sources */,
+				1805736E2C2691A6007659DB /* HookTools.m in Sources */,
+				180572C52C269199007659DB /* ZXBlockLog.m in Sources */,
+				180572C62C269199007659DB /* ZXMethodLog.m in Sources */,
+				180572C72C269199007659DB /* ZXEncryption.m in Sources */,
+				180572C82C269199007659DB /* ZXPoll.m in Sources */,
+				180572C92C269199007659DB /* CocoaSecurity.m in Sources */,
+				180572CA2C269199007659DB /* ZXClassArchived.m in Sources */,
+				180572CB2C269199007659DB /* NSString+ZXDataConvert.m in Sources */,
+				180572CC2C269199007659DB /* UIViewController+ZXHandleLoad.m in Sources */,
+				180572CD2C269199007659DB /* ZXShadowView.m in Sources */,
+				180572CE2C269199007659DB /* NSMutableArray+ZXSafetySet.m in Sources */,
+				180572CF2C269199007659DB /* NSObject+ZXGetProperty.m in Sources */,
+				180572D02C269199007659DB /* ZXDataType.m in Sources */,
+				180572D12C269199007659DB /* NSObject+ZXHookClassUtil.m in Sources */,
+				180572D22C269199007659DB /* NSDictionary+ZXSafetySet.m in Sources */,
+				180572D32C269199007659DB /* ZXShowImgView.m in Sources */,
+				180572D42C269199007659DB /* UIView+ZXHookUIGet.m in Sources */,
+				180572D52C269199007659DB /* UIViewController+ZXAlert.m in Sources */,
+				180572D62C269199007659DB /* ZXDataStoreSQlite.m in Sources */,
+				180572D72C269199007659DB /* ZXBlockLogTool.m in Sources */,
+				180572D82C269199007659DB /* ZXBlockLogResult.m in Sources */,
+				180572D92C269199007659DB /* ZXRequestBlock.m in Sources */,
+				180572DA2C269199007659DB /* NSURLSession+ZXHttpProxy.m in Sources */,
+				180572DB2C269199007659DB /* ZXHookClass.m in Sources */,
+				180572DC2C269199007659DB /* NSData+ZXDataConvert.m in Sources */,
+				180572DD2C269199007659DB /* UIView+ZXFrame.m in Sources */,
+				180572DE2C269199007659DB /* NSArray+ZXDataConvert.m in Sources */,
+				180572DF2C269199007659DB /* NSObject+ZXToJson.m in Sources */,
+				180573972C269210007659DB /* PatchSVC.c in Sources */,
+				180572E02C269199007659DB /* ZXDataConvertConfig.m in Sources */,
+				180572E12C269199007659DB /* ZXURLProtocol.m in Sources */,
+				180572E22C269199007659DB /* ZXHttpIPGet.m in Sources */,
+				180572E32C269199007659DB /* NSObject+ZXHandleLoad.m in Sources */,
+				180572E42C269199007659DB /* ZXCodeFloor.m in Sources */,
+				180572E52C269199007659DB /* NSObject+ZXToModel.m in Sources */,
+				180572E62C269199007659DB /* ZXHookUIGet.m in Sources */,
+				180572E72C269199007659DB /* NSString+ZXHookRegular.m in Sources */,
+				180572E82C269199007659DB /* ZXDataStoreCache.m in Sources */,
+				180572E92C269199007659DB /* NSDictionary+ZXDataConvert.m in Sources */,
+				180572EA2C269199007659DB /* UIButton+ZXHookAction.m in Sources */,
+				180572EB2C269199007659DB /* NSObject+ZXToDic.m in Sources */,
+				180572EC2C269199007659DB /* CTBlockDescription.m in Sources */,
+				180572ED2C269199007659DB /* JRSwizzle.m in Sources */,
+				180572EE2C269199007659DB /* NSObject+ZXDataConvertRule.m in Sources */,
+				180572EF2C269199007659DB /* ANYMethodLog.m in Sources */,
+				180572F02C269199007659DB /* ZXDecimalNumberTool.m in Sources */,
+				C63AC1AB1E8392210094B1C5 /* IPAPatchBypassAntiDebugging.m in Sources */,
+				C6B263281E7BC9DF009B4DEA /* IPAPatchEntry.m in Sources */,
+				C63AC1A51E838BB70094B1C5 /* fishhook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B263451E7BCB31009B4DEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C64288391E7BF9E900C0BBB0 /* ProjectConfigurationWarning.cpp in Sources */,
+				C6B263501E7BCB31009B4DEA /* AppDelegate.m in Sources */,
+				C6B2634D1E7BCB31009B4DEA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C698BA1529861E8C00BB5DC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C698BA0F29861E8B00BB5DC9 /* IPAPatchFrameworkMac */;
+			targetProxy = C698BA1429861E8C00BB5DC9 /* PBXContainerItemProxy */;
+		};
+		C6B263611E7BCC65009B4DEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6B263061E7BC97B009B4DEA /* IPAPatchFramework */;
+			targetProxy = C6B263601E7BCC65009B4DEA /* PBXContainerItemProxy */;
+		};
+		C6DDBB611F51469300A42BE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6B263481E7BCB31009B4DEA /* IPAPatch-DummyApp */;
+			targetProxy = C6DDBB601F51469300A42BE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C698BA042986148700BB5DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"TARGET_BUNDLE_ID=$(PRODUCT_BUNDLE_IDENTIFIER)",
+					"CODE_SIGN_IDENTITY=$(CODE_SIGN_IDENTITY)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Weibo. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		C698BA052986148700BB5DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TARGET_BUNDLE_ID=$(PRODUCT_BUNDLE_IDENTIFIER)",
+					"CODE_SIGN_IDENTITY=$(CODE_SIGN_IDENTITY)",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Weibo. All rights reserved.";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		C698BA1929861E8C00BB5DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Weibo. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.IPAPatchMac;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		C698BA1A29861E8C00BB5DC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Weibo. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.IPAPatchMac;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		C6B263191E7BC97B009B4DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C6B2631A1E7BC97B009B4DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C6B2631C1E7BC97B009B4DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = CPL4GGWSTS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = IPAPatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.IPAPatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C6B2631D1E7BC97B009B4DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = CPL4GGWSTS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = IPAPatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.IPAPatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C6B2635E1E7BCB31009B4DEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPL4GGWSTS;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"TARGET_BUNDLE_ID=$(PRODUCT_BUNDLE_IDENTIFIER)",
+					"CODE_SIGN_IDENTITY=$(CODE_SIGN_IDENTITY)",
+				);
+				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangjia.gif.app1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C6B2635F1E7BCB31009B4DEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CPL4GGWSTS;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TARGET_BUNDLE_ID=$(PRODUCT_BUNDLE_IDENTIFIER)",
+					"CODE_SIGN_IDENTITY=$(CODE_SIGN_IDENTITY)",
+				);
+				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiangjia.gif.app1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C6DDBB5E1F51468D00A42BE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DMJXDB9H6Q;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C6DDBB5F1F51468D00A42BE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = DMJXDB9H6Q;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C698BA062986148700BB5DC9 /* Build configuration list for PBXNativeTarget "IPAPatch-MacDummyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C698BA042986148700BB5DC9 /* Debug */,
+				C698BA052986148700BB5DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C698BA1829861E8C00BB5DC9 /* Build configuration list for PBXNativeTarget "IPAPatchFrameworkMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C698BA1929861E8C00BB5DC9 /* Debug */,
+				C698BA1A29861E8C00BB5DC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6B263011E7BC97B009B4DEA /* Build configuration list for PBXProject "IPAPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B263191E7BC97B009B4DEA /* Debug */,
+				C6B2631A1E7BC97B009B4DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6B2631B1E7BC97B009B4DEA /* Build configuration list for PBXNativeTarget "IPAPatchFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B2631C1E7BC97B009B4DEA /* Debug */,
+				C6B2631D1E7BC97B009B4DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6B2635D1E7BCB31009B4DEA /* Build configuration list for PBXNativeTarget "IPAPatch-DummyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6B2635E1E7BCB31009B4DEA /* Debug */,
+				C6B2635F1E7BCB31009B4DEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6DDBB5D1F51468D00A42BE2 /* Build configuration list for PBXAggregateTarget "IPAPatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DDBB5E1F51468D00A42BE2 /* Debug */,
+				C6DDBB5F1F51468D00A42BE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6B262FE1E7BC97B009B4DEA /* Project object */;
+}

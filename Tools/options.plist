@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RESTORE_SYMBOLS</key>
+	<false/>
+	<key>CREATE_IPA_FILE</key>
+	<false/>
+	<key>IGNORE_UI_SUPPORTED_DEVICES</key>
+	<true/>
+	<key>REMOVE_WATCHPLACEHOLDER</key>
+	<true/>
+	<key>USE_ORIGINAL_ENTITLEMENTS</key>
+	<false/>
+</dict>
+</plist>
