@@ -58,7 +58,7 @@ REMOVE_WATCHPLACEHOLDER=$(/usr/libexec/PlistBuddy -c "Print REMOVE_WATCHPLACEHOL
 USE_ORIGINAL_ENTITLEMENTS=$(/usr/libexec/PlistBuddy -c "Print USE_ORIGINAL_ENTITLEMENTS"  "${OPTIONS_PATH}")
 USE_DOBBY=$(/usr/libexec/PlistBuddy -c "Print USE_DOBBY"  "${OPTIONS_PATH}")
 USE_FLEX=$(/usr/libexec/PlistBuddy -c "Print USE_FLEX"  "${OPTIONS_PATH}")
-USE_REVEALSERVER=$(/usr/libexec/PlistBuddy -c "Print USE_REVEALSERVER"  "${OPTIONS_PATH}")
+USE_REVEALSERVER=$(/usr/libexec/PlistBuddy -c "Print USE_LOOKIN"  "${OPTIONS_PATH}")
 USE_FRIDA=$(/usr/libexec/PlistBuddy -c "Print USE_FRIDA"  "${OPTIONS_PATH}")
 
 echo "[+] RESTORE_SYMBOLS: $RESTORE_SYMBOLS"
@@ -183,7 +183,7 @@ for file in `ls -1 "${FRAMEWORKS_TO_INJECT_PATH}"`; do
     filename="${file%.*}"
     echo "[-] Framework filename is $filename"
     echo -n '     '
-    if  [ "$filename" == "Dobby" ] || [ "$filename" == "FLEX" ] || [ "$filename" == "RevealServer" ]
+    if  [ "$filename" == "Dobby" ] || [ "$filename" == "FLEX" ] || [ "$filename" == "LookinServer" ]
     then
         echo "[-] Injecting Framework USE_DOBBY is $USE_DOBBY USE_FLEX is $USE_FLEX USE_REVEALSERVER is $USE_REVEALSERVER"
         if [ "$USE_DOBBY" = true ] || [ "$USE_FLEX" = true ] || [ "$USE_REVEALSERVER" = true ]
