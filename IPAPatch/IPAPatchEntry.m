@@ -25,7 +25,7 @@
 //        [HookTools showFLEXDelayBy:5];
         
         // 可以检测网络请求中出现的敏感数据，规则自己去HookURLProtocol.m里写
-        [HookURLProtocol hook];
+//        [HookURLProtocol hook];
 
         // 开始检测权限使用
 //        [PermissionCheck hook];
