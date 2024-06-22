@@ -9,6 +9,11 @@
 #import "HookTools.h"
 #import "CustomURLProtocol.h"
 
+#import <mach/mach_types.h>
+#import <malloc/malloc.h>
+#import <objc/runtime.h>
+#import <mach/mach_init.h>
+#import <mach/mach_error.h>
 
 void checkDylibs(void)
 {
@@ -19,6 +24,155 @@ void checkDylibs(void)
     }
 }
 
+
+enum {
+    BLOCK_HAS_COPY_DISPOSE =  (1 << 25),
+    BLOCK_HAS_CTOR =          (1 << 26), // helpers have C++ code
+    BLOCK_IS_GLOBAL =         (1 << 28),
+    BLOCK_HAS_STRET =         (1 << 29), // IFF BLOCK_HAS_SIGNATURE
+    BLOCK_HAS_SIGNATURE =     (1 << 30),
+};
+
+struct Block_literal_1 {
+    void *isa; // initialized to &_NSConcreteStackBlock or &_NSConcreteGlobalBlock
+    int flags;
+    int reserved;
+    void (*invoke)(void *, ...);
+    struct Block_descriptor_1 {
+        unsigned long int reserved; // NULL
+        unsigned long int size;         // sizeof(struct Block_literal_1)
+        // optional helper functions
+        void (*copy_helper)(void *dst, void *src);     // IFF (1<<25)
+        void (*dispose_helper)(void *src);             // IFF (1<<25)
+        // required ABI.2010.3.16
+        const char *signature;                         // IFF (1<<30)
+    } *descriptor;
+    // imported variables
+};
+
+NSString* decode(NSString* code);
+NSArray* choose_inner(const char * classname);
+char * protection_bits_to_rwx (vm_prot_t p);
+const char * unparse_inheritance (vm_inherit_t i);
+char * behavior_to_text (vm_behavior_t  b);
+
+NSString* decode(NSString* code){
+    NSDictionary * encodeMap = @{
+                                 @"c": @"char",
+                                 @"i": @"int",
+                                 @"s": @"short",
+                                 @"l": @"long",
+                                 @"q": @"long long",
+                                 
+                                 @"C": @"unsigned char",
+                                 @"I": @"unsigned int",
+                                 @"S": @"unsigned short",
+                                 @"L": @"unsigned long",
+                                 @"Q": @"unsigned long long",
+                                 
+                                 @"f": @"float",
+                                 @"d": @"double",
+                                 @"B": @"bool",
+                                 @"v": @"void",
+                                 @"*": @"char *",
+                                 @"@": @"id",
+                                 @"#": @"Class",
+                                 @":": @"SEL"
+                                 };
+    
+    if(encodeMap[code]){
+        return encodeMap[code];
+    }else if([code characterAtIndex:0] == '@'){
+        if([code characterAtIndex:1] == '?'){
+            return code;
+        }else if([code characterAtIndex:2] == '<'){
+            return [NSString stringWithFormat:@"id%@", [[code substringWithRange:NSMakeRange(2, code.length-3)] stringByReplacingOccurrencesOfString:@"><" withString:@", "]];
+        }else{
+            return [NSString stringWithFormat:@"%@ *", [code substringWithRange:NSMakeRange(2, code.length-3)]];
+        }
+    }else if([code characterAtIndex:0] == '^'){
+        return [NSString stringWithFormat:@"%@ *", decode([code substringFromIndex:1])];
+    }
+    return code;
+}
+
+NSString* pvc(){
+    return [[[UIWindow performSelector:@selector(keyWindow)] performSelector:@selector(rootViewController)] performSelector:@selector(_printHierarchy)];
+}
+
+NSString* pviews(){
+    return [[[UIApplication sharedApplication] keyWindow] performSelector:@selector(recursiveDescription)];
+}
+
+NSString* pactions(vm_address_t address){
+    NSMutableString* result = [NSMutableString new];
+    UIControl* control = (__bridge UIControl*)(void*)address;
+    NSArray* targets = [[control allTargets] allObjects];
+    for (id item in targets) {
+        NSArray* actions = [control actionsForTarget:item forControlEvent:0];
+        [result appendFormat:@"<%s: 0x%lx>: %@\n", object_getClassName(item), (unsigned long)item, [actions componentsJoinedByString:@","]];
+    }
+    return result;
+}
+
+NSString* pblock(vm_address_t address){
+    struct Block_literal_1 real = *((struct Block_literal_1 *)(void*)address);
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    [dict setObject:[NSNumber numberWithLong:(long)real.invoke] forKey:@"invoke"];
+    if (real.flags & BLOCK_HAS_SIGNATURE) {
+        char *signature;
+        if (real.flags & BLOCK_HAS_COPY_DISPOSE) {
+            signature = (char *)(real.descriptor)->signature;
+        } else {
+            signature = (char *)(real.descriptor)->copy_helper;
+        }
+        
+        NSMethodSignature *sig = [NSMethodSignature signatureWithObjCTypes:signature];
+        NSMutableArray *types = [NSMutableArray array];
+        
+        [types addObject:[NSString stringWithUTF8String:(char *)[sig methodReturnType]]];
+        
+        for (NSUInteger i = 0; i < sig.numberOfArguments; i++) {
+            char *type = (char *)[sig getArgumentTypeAtIndex:i];
+            [types addObject:[NSString stringWithUTF8String:type]];
+        }
+        
+        [dict setObject:types forKey:@"signature"];
+    }
+    
+    NSMutableArray* sigArr = dict[@"signature"];
+    
+    if(!sigArr){
+        return [NSString stringWithFormat:@"Imp: 0x%lx", [dict[@"invoke"] longValue]];
+    }else{
+        NSMutableString* sig = [NSMutableString stringWithFormat:@"%@ ^(", decode(sigArr[0])];
+        for (int i = 2; i < sigArr.count; i++) {
+            if(i == sigArr.count - 1){
+                [sig appendFormat:@"%@", decode(sigArr[i])];
+            }else{
+                [sig appendFormat:@"%@ ,", decode(sigArr[i])];
+            }
+        }
+        [sig appendString:@");"];
+        return [NSString stringWithFormat:@"Imp: 0x%lx    Signature: %s", [dict[@"invoke"] longValue], [sig UTF8String]];
+    }
+}
+
+
+__BEGIN_DECLS
+
+extern kern_return_t mach_vm_region
+(
+ vm_map_t target_task,
+ mach_vm_address_t *address,
+ mach_vm_size_t *size,
+ vm_region_flavor_t flavor,
+ vm_region_info_t info,
+ mach_msg_type_number_t *infoCnt,
+ mach_port_t *object_name
+ );
+
+__END_DECLS
 
 /// 替换类方法
 /// @param cls1 主类

@@ -15,16 +15,29 @@
 #import <UIKit/UIKit.h>
 #endif
 
+#import "BundleReplace.h"
+#import "NSBundle+Replace.h"
+
 @implementation IPAPatchEntry
 
 + (void)load
 {
-    // DO YOUR WORKS...
-    
     // For Example:
-    [self for_example_showAlert];
+//    [self for_example_showAlert];
+    
+    /// Show FLEX
+//    [self showFLEX];
+    
+    /// 包名替换
+    [BundleReplace hook:@"com.jiangjia.gif"];
+    
 }
-
++ (void)showFLEX
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [[NSClassFromString(@"FLEXManager") performSelector:@selector(sharedManager)] performSelector:@selector(showExplorer)];
+    });
+}
 + (void)for_example_showAlert
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

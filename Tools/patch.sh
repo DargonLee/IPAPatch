@@ -37,7 +37,7 @@ RESOURCES_TO_INJECT_PATH="${ASSETS_PATH}/Resources"
 DYLIBS_TO_INJECT_PATH="${ASSETS_PATH}/Dylibs"
 
 DUMMY_DISPLAY_NAME="快手分身" # To be found in Step 0
-TARGET_BUNDLE_ID="com.wutian.example" # To be found in Step 0
+TARGET_BUNDLE_ID="com.jiangjia.gif.app1" # To be found in Step 0
 RESTORE_SYMBOLS=false
 REMOVE_WATCHPLACEHOLDER=false
 USE_ORIGINAL_ENTITLEMENTS=false

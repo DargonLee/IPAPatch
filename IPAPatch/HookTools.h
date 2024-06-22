@@ -15,6 +15,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 void checkDylibs(void);
 
+NSString* pvc(void);
+
+NSString* pviews(void);
+
+NSString* pactions(vm_address_t address);
+
+NSString* pblock(vm_address_t address);
+
+NSString* methods(const char * classname);
+
+NSString* ivars(vm_address_t address);
+
 /**
  替换任意方法(包括代理方法)
  
