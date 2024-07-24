@@ -221,7 +221,7 @@ CopySwiftStdLib () {
 
 # 5-1. Inject External Frameworks if Exists
 TARGET_APP_FRAMEWORKS_PATH="$TARGET_APP_CONTENTS_PATH/Frameworks"
-
+cp "$BUILT_PRODUCTS_DIR/IPAPatchFramework.framework" "$TARGET_APP_FRAMEWORKS_PATH"
 echo "Injecting Frameworks from $FRAMEWORKS_TO_INJECT_PATH"
 for file in `ls -1 "${FRAMEWORKS_TO_INJECT_PATH}"`; do
     extension="${file##*.}"

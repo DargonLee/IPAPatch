@@ -266,8 +266,6 @@
 		1805736A2C269199007659DB /* ZXDataType.h in Headers */ = {isa = PBXBuildFile; fileRef = 180572262C269199007659DB /* ZXDataType.h */; };
 		1805736D2C2691A6007659DB /* HookTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805736B2C2691A6007659DB /* HookTools.h */; };
 		1805736E2C2691A6007659DB /* HookTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805736C2C2691A6007659DB /* HookTools.m */; };
-		1805736F2C2691A6007659DB /* HookTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805736C2C2691A6007659DB /* HookTools.m */; };
-		180573702C2691A6007659DB /* HookTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805736B2C2691A6007659DB /* HookTools.h */; };
 		180573802C2691F8007659DB /* HookURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573762C2691F8007659DB /* HookURLProtocol.h */; };
 		180573812C2691F8007659DB /* BundleReplace.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573712C2691F8007659DB /* BundleReplace.h */; };
 		180573822C2691F8007659DB /* CustomURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573742C2691F8007659DB /* CustomURLProtocol.h */; };
@@ -1051,7 +1049,6 @@
 				1805732D2C269199007659DB /* UIButton+ZXHookAction.h in Headers */,
 				1805732E2C269199007659DB /* ZXBlockLogResult.h in Headers */,
 				1805732F2C269199007659DB /* ZXHookUtil.h in Headers */,
-				180573702C2691A6007659DB /* HookTools.h in Headers */,
 				180573302C269199007659DB /* ZXDataStoreCache.h in Headers */,
 				180573312C269199007659DB /* NSObject+ZXToJson.h in Headers */,
 				180573322C269199007659DB /* NSMutableArray+ZXSafetySet.h in Headers */,
@@ -1452,7 +1449,6 @@
 				180572FE2C269199007659DB /* ZXHookClassPro.m in Sources */,
 				180572FF2C269199007659DB /* NSString+ZXRegular.m in Sources */,
 				180573002C269199007659DB /* ZXHookClassMethod.m in Sources */,
-				1805736F2C2691A6007659DB /* HookTools.m in Sources */,
 				180573012C269199007659DB /* ZXBlockLog.m in Sources */,
 				180573022C269199007659DB /* ZXMethodLog.m in Sources */,
 				180573032C269199007659DB /* ZXEncryption.m in Sources */,
@@ -1940,7 +1936,7 @@
 					"CODE_SIGN_IDENTITY=$(CODE_SIGN_IDENTITY)",
 				);
 				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "快手双开";
+				INFOPLIST_KEY_CFBundleDisplayName = "快手";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangjia.gif.app1;
@@ -1964,7 +1960,7 @@
 					"CODE_SIGN_IDENTITY=$(CODE_SIGN_IDENTITY)",
 				);
 				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "快手双开";
+				INFOPLIST_KEY_CFBundleDisplayName = "快手";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangjia.gif.app1;
