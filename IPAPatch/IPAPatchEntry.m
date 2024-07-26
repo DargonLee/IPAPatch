@@ -35,7 +35,10 @@
 + (void)showFLEX
 {
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[NSClassFromString(@"FLEXManager") performSelector:@selector(sharedManager)] performSelector:@selector(showExplorer)];
+        Class class = NSClassFromString(@"FLEXManager");
+        if ([class respondsToSelector:@selector(sharedManager)]) {
+            [[class performSelector:@selector(sharedManager)] performSelector:@selector(showExplorer)];
+        }
     });
 }
 + (void)for_example_showAlert

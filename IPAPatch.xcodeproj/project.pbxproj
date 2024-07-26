@@ -292,11 +292,14 @@
 		180573992C269210007659DB /* PatchSVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 180573942C269210007659DB /* PatchSVC.h */; };
 		1805739F2C2697EC007659DB /* MonkeyDemoDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805739D2C2697EC007659DB /* MonkeyDemoDylib.h */; };
 		180573A12C2697EC007659DB /* MonkeyDemoDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1805739D2C2697EC007659DB /* MonkeyDemoDylib.h */; };
-		180573A22C2697EC007659DB /* MonkeyDemoDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805739E2C2697EC007659DB /* MonkeyDemoDylib.m */; };
 		181FB8522C26BB2700D406D3 /* NSBundle+Replace.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FB8512C26BB2700D406D3 /* NSBundle+Replace.m */; };
 		181FB8532C26BB2700D406D3 /* NSBundle+Replace.h in Headers */ = {isa = PBXBuildFile; fileRef = 181FB8502C26BB2700D406D3 /* NSBundle+Replace.h */; };
 		181FB8542C26BB2700D406D3 /* NSBundle+Replace.h in Headers */ = {isa = PBXBuildFile; fileRef = 181FB8502C26BB2700D406D3 /* NSBundle+Replace.h */; };
 		181FB8552C26BB2700D406D3 /* NSBundle+Replace.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FB8512C26BB2700D406D3 /* NSBundle+Replace.m */; };
+		18866CFD2C53310000081FA0 /* LSApplicationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 18866CFC2C5330EB00081FA0 /* LSApplicationProxy.h */; };
+		18866CFE2C53310000081FA0 /* LSApplicationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 18866CFC2C5330EB00081FA0 /* LSApplicationProxy.h */; };
+		18866D002C53313300081FA0 /* LSApplicationWorkspace.h in Headers */ = {isa = PBXBuildFile; fileRef = 18866CFF2C53313300081FA0 /* LSApplicationWorkspace.h */; };
+		18866D012C53313300081FA0 /* LSApplicationWorkspace.h in Headers */ = {isa = PBXBuildFile; fileRef = 18866CFF2C53313300081FA0 /* LSApplicationWorkspace.h */; };
 		C63AC1A51E838BB70094B1C5 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = C63AC1A21E838BB70094B1C5 /* fishhook.c */; };
 		C63AC1A61E838BB70094B1C5 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = C63AC1A31E838BB70094B1C5 /* fishhook.h */; };
 		C63AC1AA1E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = C63AC1A81E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h */; };
@@ -481,6 +484,8 @@
 		181FB8492C269FB000D406D3 /* IPAPatchFramework */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = IPAPatchFramework; path = "../../../Library/Developer/Xcode/DerivedData/IPAPatch-bbktyfyrzkyuzuequilfoltnbubl/Build/Products/Debug-iphoneos/IPAPatchFramework.framework/IPAPatchFramework"; sourceTree = "<group>"; };
 		181FB8502C26BB2700D406D3 /* NSBundle+Replace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Replace.h"; sourceTree = "<group>"; };
 		181FB8512C26BB2700D406D3 /* NSBundle+Replace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Replace.m"; sourceTree = "<group>"; };
+		18866CFC2C5330EB00081FA0 /* LSApplicationProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
+		18866CFF2C53313300081FA0 /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspace.h; sourceTree = "<group>"; };
 		C63AC1A21E838BB70094B1C5 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		C63AC1A31E838BB70094B1C5 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		C63AC1A41E838BB70094B1C5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -901,6 +906,7 @@
 		1805737F2C2691F8007659DB /* Hookes */ = {
 			isa = PBXGroup;
 			children = (
+				18866CFB2C5330D100081FA0 /* Application */,
 				180573732C2691F8007659DB /* BundleID */,
 				180573782C2691F8007659DB /* Http */,
 				1805737B2C2691F8007659DB /* Permission */,
@@ -926,6 +932,15 @@
 				181FB8492C269FB000D406D3 /* IPAPatchFramework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18866CFB2C5330D100081FA0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				18866CFC2C5330EB00081FA0 /* LSApplicationProxy.h */,
+				18866CFF2C53313300081FA0 /* LSApplicationWorkspace.h */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		C63AC1A01E838B8E0094B1C5 /* Vendors */ = {
@@ -1085,6 +1100,7 @@
 				180573912C2691F8007659DB /* CustomURLProtocol.h in Headers */,
 				180573922C2691F8007659DB /* UIViewController+Screen.h in Headers */,
 				180573932C2691F8007659DB /* PermissionCheck.h in Headers */,
+				18866CFD2C53310000081FA0 /* LSApplicationProxy.h in Headers */,
 				1805734E2C269199007659DB /* NSDictionary+ZXSafetySet.h in Headers */,
 				1805734F2C269199007659DB /* ZXClassArchived.h in Headers */,
 				180573502C269199007659DB /* ZXDataHandleHeaders.h in Headers */,
@@ -1109,6 +1125,7 @@
 				180573622C269199007659DB /* JRSwizzle.h in Headers */,
 				180573632C269199007659DB /* NSObject+ZXGetProperty.h in Headers */,
 				180573642C269199007659DB /* ZXHookClassPro.h in Headers */,
+				18866D002C53313300081FA0 /* LSApplicationWorkspace.h in Headers */,
 				180573652C269199007659DB /* ZXShowImgView.h in Headers */,
 				180573662C269199007659DB /* NSObject+ZXDataConvertRule.h in Headers */,
 				181FB8532C26BB2700D406D3 /* NSBundle+Replace.h in Headers */,
@@ -1144,6 +1161,7 @@
 				180572872C269199007659DB /* NSObject+ZXSafetySet.h in Headers */,
 				180572882C269199007659DB /* ZXDataConvertConfig.h in Headers */,
 				180572892C269199007659DB /* ZXBlockLogTool.h in Headers */,
+				18866D012C53313300081FA0 /* LSApplicationWorkspace.h in Headers */,
 				1805728A2C269199007659DB /* ZXDecimalNumberTool.h in Headers */,
 				1805728B2C269199007659DB /* ZXHookClass.h in Headers */,
 				1805728C2C269199007659DB /* ZXEncryption.h in Headers */,
@@ -1196,6 +1214,7 @@
 				180572B32C269199007659DB /* NSString+ZXRegular.h in Headers */,
 				180572B42C269199007659DB /* ZXHttpIPGet.h in Headers */,
 				180572B52C269199007659DB /* ZXBlockLog.h in Headers */,
+				18866CFE2C53310000081FA0 /* LSApplicationProxy.h in Headers */,
 				180572B62C269199007659DB /* ZXDataType.h in Headers */,
 				C63AC1AA1E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h in Headers */,
 			);
@@ -1483,7 +1502,6 @@
 				1805731E2C269199007659DB /* ZXHttpIPGet.m in Sources */,
 				1805731F2C269199007659DB /* NSObject+ZXHandleLoad.m in Sources */,
 				180573202C269199007659DB /* ZXCodeFloor.m in Sources */,
-				180573A22C2697EC007659DB /* MonkeyDemoDylib.m in Sources */,
 				180573212C269199007659DB /* NSObject+ZXToModel.m in Sources */,
 				180573222C269199007659DB /* ZXHookUIGet.m in Sources */,
 				180573232C269199007659DB /* NSString+ZXHookRegular.m in Sources */,
@@ -1892,7 +1910,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IPAPatch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.IPAPatch;
@@ -1913,7 +1931,7 @@
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = IPAPatch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wutian.IPAPatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1937,7 +1955,7 @@
 				);
 				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "快手";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangjia.gif.app1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1961,7 +1979,7 @@
 				);
 				INFOPLIST_FILE = "IPAPatch-DummyApp/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "快手";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jiangjia.gif.app1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
