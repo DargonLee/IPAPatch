@@ -19,8 +19,14 @@ static NSMutableDictionary *ipaPatch__glb__realyInfo = nil;
 + (NSDictionary *)his_dictionaryWithContentsOfFile:(NSString *)path
 {
     NSDictionary *info = [self his_dictionaryWithContentsOfFile:path];
-    if ([path hasSuffix:@"Info.plist"]) {
+    if ([path hasSuffix:@".app/Info.plist"]) {
         NSMutableDictionary *realyInfo = [NSMutableDictionary dictionaryWithDictionary:info];
+        NSString *originalIdentifier = realyInfo[@"CFBundleIdentifier"];
+        NSMutableArray *components = [[originalIdentifier componentsSeparatedByString:@"."] mutableCopy];
+        if (components.count > 2) {
+            originalIdentifier = [components componentsJoinedByString:@"."];
+            ipaPatch__bundleId = originalIdentifier;
+        }
         realyInfo[@"CFBundleIdentifier"] = ipaPatch__bundleId;
         return realyInfo;
     }
@@ -31,7 +37,17 @@ static NSMutableDictionary *ipaPatch__glb__realyInfo = nil;
 static NSDictionary *dic;
 - (NSDictionary*)his_infoDictionary
 {
+    if (dic) {
+        return dic;
+    }
     NSDictionary *originalInfoDictionary = [self his_infoDictionary];
+    NSString *originalIdentifier = originalInfoDictionary[@"CFBundleIdentifier"];
+    NSMutableArray *components = [[originalIdentifier componentsSeparatedByString:@"."] mutableCopy];
+    if (components.count > 2) {
+        [components removeLastObject];
+        originalIdentifier = [components componentsJoinedByString:@"."];
+        ipaPatch__bundleId = originalIdentifier;
+    }
     if(!ipaPatch__glb__realyInfo) {
         ipaPatch__glb__realyInfo = [NSMutableDictionary dictionaryWithDictionary:originalInfoDictionary];
     }

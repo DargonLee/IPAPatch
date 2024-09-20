@@ -21,6 +21,7 @@
 - (BOOL)installed;
 - (BOOL)restricted;
 
+- (NSString *)bundleIdentifier;
 - (NSString *)applicationIdentifier;
 - (NSString *)localizedName;
 - (NSString *)shortVersionString;

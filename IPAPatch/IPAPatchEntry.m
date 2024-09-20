@@ -29,7 +29,7 @@
 //    [self showFLEX];
     
     /// 包名替换
-    [BundleReplace hook:@"com.jiangjia.gif"];
+    [BundleReplace hook:@""];
     
 }
 + (void)showFLEX
