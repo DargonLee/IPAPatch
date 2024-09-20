@@ -300,6 +300,16 @@
 		1830EE262C81B9B700543250 /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1830EE242C81B9B700543250 /* LSApplicationProxy+AltList.m */; };
 		1830EE272C81B9B700543250 /* LSApplicationProxy+AltList.h in Headers */ = {isa = PBXBuildFile; fileRef = 1830EE232C81B9B700543250 /* LSApplicationProxy+AltList.h */; };
 		1830EE282C81B9B700543250 /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1830EE242C81B9B700543250 /* LSApplicationProxy+AltList.m */; };
+		1857B7202C9D41D600AED124 /* litehook.h in Headers */ = {isa = PBXBuildFile; fileRef = 1857B71D2C9D41D600AED124 /* litehook.h */; };
+		1857B7212C9D41D600AED124 /* litehook.c in Sources */ = {isa = PBXBuildFile; fileRef = 1857B71E2C9D41D600AED124 /* litehook.c */; };
+		1857B7222C9D41D600AED124 /* litehook.h in Headers */ = {isa = PBXBuildFile; fileRef = 1857B71D2C9D41D600AED124 /* litehook.h */; };
+		1857B7232C9D41D600AED124 /* litehook.c in Sources */ = {isa = PBXBuildFile; fileRef = 1857B71E2C9D41D600AED124 /* litehook.c */; };
+		1857B7262C9D41F900AED124 /* dyld_cache_format.h in Headers */ = {isa = PBXBuildFile; fileRef = 1857B7242C9D41F900AED124 /* dyld_cache_format.h */; };
+		1857B7272C9D41F900AED124 /* fixup-chains.h in Headers */ = {isa = PBXBuildFile; fileRef = 1857B7252C9D41F900AED124 /* fixup-chains.h */; };
+		1857B7282C9D41F900AED124 /* dyld_cache_format.h in Headers */ = {isa = PBXBuildFile; fileRef = 1857B7242C9D41F900AED124 /* dyld_cache_format.h */; };
+		1857B7292C9D41F900AED124 /* fixup-chains.h in Headers */ = {isa = PBXBuildFile; fileRef = 1857B7252C9D41F900AED124 /* fixup-chains.h */; };
+		1857B72B2C9D423600AED124 /* test_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1857B72A2C9D423600AED124 /* test_main.c */; };
+		1857B72C2C9D423600AED124 /* test_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1857B72A2C9D423600AED124 /* test_main.c */; };
 		18866CFD2C53310000081FA0 /* LSApplicationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 18866CFC2C5330EB00081FA0 /* LSApplicationProxy.h */; };
 		18866CFE2C53310000081FA0 /* LSApplicationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 18866CFC2C5330EB00081FA0 /* LSApplicationProxy.h */; };
 		18866D002C53313300081FA0 /* LSApplicationWorkspace.h in Headers */ = {isa = PBXBuildFile; fileRef = 18866CFF2C53313300081FA0 /* LSApplicationWorkspace.h */; };
@@ -494,6 +504,11 @@
 		181FB8512C26BB2700D406D3 /* NSBundle+Replace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Replace.m"; sourceTree = "<group>"; };
 		1830EE232C81B9B700543250 /* LSApplicationProxy+AltList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSApplicationProxy+AltList.h"; sourceTree = "<group>"; };
 		1830EE242C81B9B700543250 /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
+		1857B71D2C9D41D600AED124 /* litehook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = litehook.h; sourceTree = "<group>"; };
+		1857B71E2C9D41D600AED124 /* litehook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = litehook.c; sourceTree = "<group>"; };
+		1857B7242C9D41F900AED124 /* dyld_cache_format.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dyld_cache_format.h; sourceTree = "<group>"; };
+		1857B7252C9D41F900AED124 /* fixup-chains.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fixup-chains.h"; sourceTree = "<group>"; };
+		1857B72A2C9D423600AED124 /* test_main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_main.c; sourceTree = "<group>"; };
 		18866CFC2C5330EB00081FA0 /* LSApplicationProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplicationProxy.h; sourceTree = "<group>"; };
 		18866CFF2C53313300081FA0 /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspace.h; sourceTree = "<group>"; };
 		18A940FB2C918AB600A17047 /* ApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationDelegate.h; sourceTree = "<group>"; };
@@ -946,6 +961,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1857B71F2C9D41D600AED124 /* LiteHook */ = {
+			isa = PBXGroup;
+			children = (
+				1857B7242C9D41F900AED124 /* dyld_cache_format.h */,
+				1857B7252C9D41F900AED124 /* fixup-chains.h */,
+				1857B71D2C9D41D600AED124 /* litehook.h */,
+				1857B71E2C9D41D600AED124 /* litehook.c */,
+				1857B72A2C9D423600AED124 /* test_main.c */,
+			);
+			path = LiteHook;
+			sourceTree = "<group>";
+		};
 		18866CFB2C5330D100081FA0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -962,6 +989,7 @@
 		C63AC1A01E838B8E0094B1C5 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				1857B71F2C9D41D600AED124 /* LiteHook */,
 				180571E82C269199007659DB /* CaptainHook */,
 				180571EB2C269199007659DB /* JRSwizzle */,
 				180572782C269199007659DB /* ZXHookUtil */,
@@ -1124,10 +1152,13 @@
 				180573512C269199007659DB /* ZXRequestBlock.h in Headers */,
 				180573522C269199007659DB /* NSData+ZXDataConvert.h in Headers */,
 				180573532C269199007659DB /* ZXDataStoreSQlite.h in Headers */,
+				1857B7262C9D41F900AED124 /* dyld_cache_format.h in Headers */,
+				1857B7272C9D41F900AED124 /* fixup-chains.h in Headers */,
 				180573542C269199007659DB /* UIViewController+ZXHandleLoad.h in Headers */,
 				180573552C269199007659DB /* ZXHookUIGet.h in Headers */,
 				180573562C269199007659DB /* Base64.h in Headers */,
 				18A940FE2C918AB600A17047 /* ApplicationDelegate.h in Headers */,
+				1857B7222C9D41D600AED124 /* litehook.h in Headers */,
 				180573572C269199007659DB /* ZXPoll.h in Headers */,
 				180573582C269199007659DB /* NSURLSession+ZXHttpProxy.h in Headers */,
 				180573592C269199007659DB /* NSObject+ZXHandleLoad.h in Headers */,
@@ -1163,10 +1194,13 @@
 				C63AC1A61E838BB70094B1C5 /* fishhook.h in Headers */,
 				180572792C269199007659DB /* UIButton+ZXHookAction.h in Headers */,
 				1805727A2C269199007659DB /* ZXBlockLogResult.h in Headers */,
+				1857B7282C9D41F900AED124 /* dyld_cache_format.h in Headers */,
+				1857B7292C9D41F900AED124 /* fixup-chains.h in Headers */,
 				180573962C269210007659DB /* PatchSVC.h in Headers */,
 				1805727B2C269199007659DB /* ZXHookUtil.h in Headers */,
 				1805727C2C269199007659DB /* ZXDataStoreCache.h in Headers */,
 				1805727D2C269199007659DB /* NSObject+ZXToJson.h in Headers */,
+				1857B7202C9D41D600AED124 /* litehook.h in Headers */,
 				1805727E2C269199007659DB /* NSMutableArray+ZXSafetySet.h in Headers */,
 				1805727F2C269199007659DB /* NSString+ZXHookRegular.h in Headers */,
 				180572802C269199007659DB /* ZXDataConvert.h in Headers */,
@@ -1531,11 +1565,13 @@
 				180573262C269199007659DB /* UIButton+ZXHookAction.m in Sources */,
 				180573272C269199007659DB /* NSObject+ZXToDic.m in Sources */,
 				180573282C269199007659DB /* CTBlockDescription.m in Sources */,
+				1857B7232C9D41D600AED124 /* litehook.c in Sources */,
 				180573292C269199007659DB /* JRSwizzle.m in Sources */,
 				1805732A2C269199007659DB /* NSObject+ZXDataConvertRule.m in Sources */,
 				1805732B2C269199007659DB /* ANYMethodLog.m in Sources */,
 				18A941002C918AB600A17047 /* ApplicationDelegate.m in Sources */,
 				1805732C2C269199007659DB /* ZXDecimalNumberTool.m in Sources */,
+				1857B72B2C9D423600AED124 /* test_main.c in Sources */,
 				C698BA1D29861EDA00BB5DC9 /* IPAPatchBypassAntiDebugging.m in Sources */,
 				C698BA1E29861EDE00BB5DC9 /* fishhook.c in Sources */,
 				C698BA1C29861ED700BB5DC9 /* IPAPatchEntry.m in Sources */,
@@ -1612,9 +1648,11 @@
 				180572ED2C269199007659DB /* JRSwizzle.m in Sources */,
 				180572EE2C269199007659DB /* NSObject+ZXDataConvertRule.m in Sources */,
 				180572EF2C269199007659DB /* ANYMethodLog.m in Sources */,
+				1857B7212C9D41D600AED124 /* litehook.c in Sources */,
 				18A940FF2C918AB600A17047 /* ApplicationDelegate.m in Sources */,
 				180572F02C269199007659DB /* ZXDecimalNumberTool.m in Sources */,
 				C63AC1AB1E8392210094B1C5 /* IPAPatchBypassAntiDebugging.m in Sources */,
+				1857B72C2C9D423600AED124 /* test_main.c in Sources */,
 				C6B263281E7BC9DF009B4DEA /* IPAPatchEntry.m in Sources */,
 				C63AC1A51E838BB70094B1C5 /* fishhook.c in Sources */,
 			);
