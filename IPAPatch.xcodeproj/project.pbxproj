@@ -300,6 +300,11 @@
 		1830EE262C81B9B700543250 /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1830EE242C81B9B700543250 /* LSApplicationProxy+AltList.m */; };
 		1830EE272C81B9B700543250 /* LSApplicationProxy+AltList.h in Headers */ = {isa = PBXBuildFile; fileRef = 1830EE232C81B9B700543250 /* LSApplicationProxy+AltList.h */; };
 		1830EE282C81B9B700543250 /* LSApplicationProxy+AltList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1830EE242C81B9B700543250 /* LSApplicationProxy+AltList.m */; };
+		185394622CA6407E00D6BBF8 /* JacoHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 185394602CA6407E00D6BBF8 /* JacoHook.h */; };
+		185394632CA6407E00D6BBF8 /* JacoHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 185394612CA6407E00D6BBF8 /* JacoHook.m */; };
+		185394642CA6407E00D6BBF8 /* JacoHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 185394612CA6407E00D6BBF8 /* JacoHook.m */; };
+		185394652CA6407E00D6BBF8 /* JacoHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 185394602CA6407E00D6BBF8 /* JacoHook.h */; };
+		185394662CA6407E00D6BBF8 /* JacoHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 185394612CA6407E00D6BBF8 /* JacoHook.m */; };
 		1857B7202C9D41D600AED124 /* litehook.h in Headers */ = {isa = PBXBuildFile; fileRef = 1857B71D2C9D41D600AED124 /* litehook.h */; };
 		1857B7212C9D41D600AED124 /* litehook.c in Sources */ = {isa = PBXBuildFile; fileRef = 1857B71E2C9D41D600AED124 /* litehook.c */; };
 		1857B7222C9D41D600AED124 /* litehook.h in Headers */ = {isa = PBXBuildFile; fileRef = 1857B71D2C9D41D600AED124 /* litehook.h */; };
@@ -504,6 +509,8 @@
 		181FB8512C26BB2700D406D3 /* NSBundle+Replace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Replace.m"; sourceTree = "<group>"; };
 		1830EE232C81B9B700543250 /* LSApplicationProxy+AltList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSApplicationProxy+AltList.h"; sourceTree = "<group>"; };
 		1830EE242C81B9B700543250 /* LSApplicationProxy+AltList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LSApplicationProxy+AltList.m"; sourceTree = "<group>"; };
+		185394602CA6407E00D6BBF8 /* JacoHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JacoHook.h; sourceTree = "<group>"; };
+		185394612CA6407E00D6BBF8 /* JacoHook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JacoHook.m; sourceTree = "<group>"; };
 		1857B71D2C9D41D600AED124 /* litehook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = litehook.h; sourceTree = "<group>"; };
 		1857B71E2C9D41D600AED124 /* litehook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = litehook.c; sourceTree = "<group>"; };
 		1857B7242C9D41F900AED124 /* dyld_cache_format.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dyld_cache_format.h; sourceTree = "<group>"; };
@@ -933,6 +940,7 @@
 		1805737F2C2691F8007659DB /* Hookes */ = {
 			isa = PBXGroup;
 			children = (
+				1853945F2CA63FEB00D6BBF8 /* JACO */,
 				18866CFB2C5330D100081FA0 /* Application */,
 				180573732C2691F8007659DB /* BundleID */,
 				180573782C2691F8007659DB /* Http */,
@@ -959,6 +967,15 @@
 				181FB8492C269FB000D406D3 /* IPAPatchFramework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1853945F2CA63FEB00D6BBF8 /* JACO */ = {
+			isa = PBXGroup;
+			children = (
+				185394602CA6407E00D6BBF8 /* JacoHook.h */,
+				185394612CA6407E00D6BBF8 /* JacoHook.m */,
+			);
+			path = JACO;
 			sourceTree = "<group>";
 		};
 		1857B71F2C9D41D600AED124 /* LiteHook */ = {
@@ -1176,6 +1193,7 @@
 				180573642C269199007659DB /* ZXHookClassPro.h in Headers */,
 				18866D002C53313300081FA0 /* LSApplicationWorkspace.h in Headers */,
 				180573652C269199007659DB /* ZXShowImgView.h in Headers */,
+				185394652CA6407E00D6BBF8 /* JacoHook.h in Headers */,
 				180573662C269199007659DB /* NSObject+ZXDataConvertRule.h in Headers */,
 				181FB8532C26BB2700D406D3 /* NSBundle+Replace.h in Headers */,
 				180573672C269199007659DB /* NSString+ZXRegular.h in Headers */,
@@ -1250,6 +1268,7 @@
 				180573832C2691F8007659DB /* UIViewController+Screen.h in Headers */,
 				180573842C2691F8007659DB /* PermissionCheck.h in Headers */,
 				180572A62C269199007659DB /* ZXHookClassMethod.h in Headers */,
+				185394622CA6407E00D6BBF8 /* JacoHook.h in Headers */,
 				180572A72C269199007659DB /* CTBlockDescription.h in Headers */,
 				180572A82C269199007659DB /* NSDictionary+ZXDataConvert.h in Headers */,
 				180572A92C269199007659DB /* ZXHttpRequest.h in Headers */,
@@ -1521,6 +1540,7 @@
 				180572FD2C269199007659DB /* ZXHttpRequest.m in Sources */,
 				180572FE2C269199007659DB /* ZXHookClassPro.m in Sources */,
 				180572FF2C269199007659DB /* NSString+ZXRegular.m in Sources */,
+				185394642CA6407E00D6BBF8 /* JacoHook.m in Sources */,
 				180573002C269199007659DB /* ZXHookClassMethod.m in Sources */,
 				180573012C269199007659DB /* ZXBlockLog.m in Sources */,
 				180573022C269199007659DB /* ZXMethodLog.m in Sources */,
@@ -1645,6 +1665,7 @@
 				180572EA2C269199007659DB /* UIButton+ZXHookAction.m in Sources */,
 				180572EB2C269199007659DB /* NSObject+ZXToDic.m in Sources */,
 				180572EC2C269199007659DB /* CTBlockDescription.m in Sources */,
+				185394632CA6407E00D6BBF8 /* JacoHook.m in Sources */,
 				180572ED2C269199007659DB /* JRSwizzle.m in Sources */,
 				180572EE2C269199007659DB /* NSObject+ZXDataConvertRule.m in Sources */,
 				180572EF2C269199007659DB /* ANYMethodLog.m in Sources */,
@@ -1665,6 +1686,7 @@
 				C64288391E7BF9E900C0BBB0 /* ProjectConfigurationWarning.cpp in Sources */,
 				C6B263501E7BCB31009B4DEA /* AppDelegate.m in Sources */,
 				C6B2634D1E7BCB31009B4DEA /* main.m in Sources */,
+				185394662CA6407E00D6BBF8 /* JacoHook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

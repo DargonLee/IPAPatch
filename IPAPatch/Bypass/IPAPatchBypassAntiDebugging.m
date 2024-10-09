@@ -78,10 +78,42 @@ int	hooked_sysctl(int * arg0, u_int arg1, void * arg2, size_t * arg3, void * arg
     }
 }
 
+typedef int (*syscall_ptr_t)(int, ...);
+static syscall_ptr_t orig_syscall = NULL;
+static int (*original_lstat)(const char *path, struct stat *buf);
+int my_lstat(const char *path, struct stat *buf) {
+    printf("lstat called for path: %s\n", path);
+    return original_lstat(path, buf);
+}
+int my_syscall(int code, va_list args);
+int my_syscall(int code, va_list args){
+    int request;
+    va_list newArgs;
+    va_copy(newArgs, args);
+    if(code == 26){
+#ifdef __LP64__
+        __asm__(
+                "ldr %w[result], [fp, #0x10]\n"
+                : [result] "=r" (request)
+                :
+                :
+                );
+#else
+        request = va_arg(args, int);
+#endif
+        if(request == 31){
+            NSLog(@"[AntiAntiDebug] - syscall call ptrace, and request is PT_DENY_ATTACH");
+            return 0;
+        }
+    }
+    return orig_syscall(code, newArgs);
+}
 static void disable_sysctl_debugger_checking()
 {
     original_sysctl = dlsym(RTLD_DEFAULT, "sysctl");
     rebind_symbols((struct rebinding[1]){{"sysctl", hooked_sysctl}}, 1);
+    rebind_symbols((struct rebinding[1]){{"syscall", my_syscall, (void*)&orig_syscall}},1);
+    rebind_symbols((struct rebinding[1]){{"lstat", my_lstat, (void*)&original_lstat}},1);
 }
 
 #if TESTS_BYPASS
