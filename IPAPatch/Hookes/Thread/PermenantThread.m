@@ -24,6 +24,11 @@
 
 @implementation PermenantThread
 
+- (void)dealloc
+{
+    [self stop];
+}
+
 - (instancetype)init
 {
     if (self = [super init]) {
