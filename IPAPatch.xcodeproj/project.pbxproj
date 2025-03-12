@@ -323,6 +323,11 @@
 		18A940FE2C918AB600A17047 /* ApplicationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A940FB2C918AB600A17047 /* ApplicationDelegate.h */; };
 		18A940FF2C918AB600A17047 /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A940FC2C918AB600A17047 /* ApplicationDelegate.m */; };
 		18A941002C918AB600A17047 /* ApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A940FC2C918AB600A17047 /* ApplicationDelegate.m */; };
+		18FF740A2D81BA180061C3D9 /* PermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF74092D81BA180061C3D9 /* PermenantThread.m */; };
+		18FF740B2D81BA180061C3D9 /* PermenantThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FF74082D81BA180061C3D9 /* PermenantThread.h */; };
+		18FF740C2D81BA180061C3D9 /* PermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF74092D81BA180061C3D9 /* PermenantThread.m */; };
+		18FF740D2D81BA180061C3D9 /* PermenantThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FF74082D81BA180061C3D9 /* PermenantThread.h */; };
+		18FF740E2D81BA180061C3D9 /* PermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF74092D81BA180061C3D9 /* PermenantThread.m */; };
 		C63AC1A51E838BB70094B1C5 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = C63AC1A21E838BB70094B1C5 /* fishhook.c */; };
 		C63AC1A61E838BB70094B1C5 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = C63AC1A31E838BB70094B1C5 /* fishhook.h */; };
 		C63AC1AA1E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h in Headers */ = {isa = PBXBuildFile; fileRef = C63AC1A81E8392210094B1C5 /* IPAPatchBypassAntiDebugging.h */; };
@@ -520,6 +525,8 @@
 		18866CFF2C53313300081FA0 /* LSApplicationWorkspace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSApplicationWorkspace.h; sourceTree = "<group>"; };
 		18A940FB2C918AB600A17047 /* ApplicationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationDelegate.h; sourceTree = "<group>"; };
 		18A940FC2C918AB600A17047 /* ApplicationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationDelegate.m; sourceTree = "<group>"; };
+		18FF74082D81BA180061C3D9 /* PermenantThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PermenantThread.h; sourceTree = "<group>"; };
+		18FF74092D81BA180061C3D9 /* PermenantThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PermenantThread.m; sourceTree = "<group>"; };
 		C63AC1A21E838BB70094B1C5 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		C63AC1A31E838BB70094B1C5 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		C63AC1A41E838BB70094B1C5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -940,6 +947,7 @@
 		1805737F2C2691F8007659DB /* Hookes */ = {
 			isa = PBXGroup;
 			children = (
+				18FF74072D81B94E0061C3D9 /* Thread */,
 				1853945F2CA63FEB00D6BBF8 /* JACO */,
 				18866CFB2C5330D100081FA0 /* Application */,
 				180573732C2691F8007659DB /* BundleID */,
@@ -1001,6 +1009,15 @@
 				18A940FC2C918AB600A17047 /* ApplicationDelegate.m */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		18FF74072D81B94E0061C3D9 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				18FF74082D81BA180061C3D9 /* PermenantThread.h */,
+				18FF74092D81BA180061C3D9 /* PermenantThread.m */,
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 		C63AC1A01E838B8E0094B1C5 /* Vendors */ = {
@@ -1163,6 +1180,7 @@
 				180573922C2691F8007659DB /* UIViewController+Screen.h in Headers */,
 				180573932C2691F8007659DB /* PermissionCheck.h in Headers */,
 				18866CFD2C53310000081FA0 /* LSApplicationProxy.h in Headers */,
+				18FF740B2D81BA180061C3D9 /* PermenantThread.h in Headers */,
 				1805734E2C269199007659DB /* NSDictionary+ZXSafetySet.h in Headers */,
 				1805734F2C269199007659DB /* ZXClassArchived.h in Headers */,
 				180573502C269199007659DB /* ZXDataHandleHeaders.h in Headers */,
@@ -1249,6 +1267,7 @@
 				180572982C269199007659DB /* NSString+ZXDataConvert.h in Headers */,
 				180572992C269199007659DB /* CocoaSecurity.h in Headers */,
 				1805729A2C269199007659DB /* NSDictionary+ZXSafetySet.h in Headers */,
+				18FF740D2D81BA180061C3D9 /* PermenantThread.h in Headers */,
 				1805729B2C269199007659DB /* ZXClassArchived.h in Headers */,
 				1805729C2C269199007659DB /* ZXDataHandleHeaders.h in Headers */,
 				1805729D2C269199007659DB /* ZXRequestBlock.h in Headers */,
@@ -1592,6 +1611,7 @@
 				18A941002C918AB600A17047 /* ApplicationDelegate.m in Sources */,
 				1805732C2C269199007659DB /* ZXDecimalNumberTool.m in Sources */,
 				1857B72B2C9D423600AED124 /* test_main.c in Sources */,
+				18FF740A2D81BA180061C3D9 /* PermenantThread.m in Sources */,
 				C698BA1D29861EDA00BB5DC9 /* IPAPatchBypassAntiDebugging.m in Sources */,
 				C698BA1E29861EDE00BB5DC9 /* fishhook.c in Sources */,
 				C698BA1C29861ED700BB5DC9 /* IPAPatchEntry.m in Sources */,
@@ -1618,6 +1638,7 @@
 				180572BF2C269199007659DB /* NSObject+ZXSafetySet.m in Sources */,
 				180572C02C269199007659DB /* UIButton+ZXAddAction.m in Sources */,
 				180572C12C269199007659DB /* ZXHttpRequest.m in Sources */,
+				18FF740C2D81BA180061C3D9 /* PermenantThread.m in Sources */,
 				180572C22C269199007659DB /* ZXHookClassPro.m in Sources */,
 				180572C32C269199007659DB /* NSString+ZXRegular.m in Sources */,
 				180572C42C269199007659DB /* ZXHookClassMethod.m in Sources */,
@@ -1684,6 +1705,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C64288391E7BF9E900C0BBB0 /* ProjectConfigurationWarning.cpp in Sources */,
+				18FF740E2D81BA180061C3D9 /* PermenantThread.m in Sources */,
 				C6B263501E7BCB31009B4DEA /* AppDelegate.m in Sources */,
 				C6B2634D1E7BCB31009B4DEA /* main.m in Sources */,
 				185394662CA6407E00D6BBF8 /* JacoHook.m in Sources */,
